@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Антон Рассадников](https://up.htmlacademy.ru/adaptive/16/user/973785).
-* Наставник: `Неизвестно`.
+* Наставник: [Полина Катышева](https://up.htmlacademy.ru/adaptive/16/user/262423).
 
 ---
 
