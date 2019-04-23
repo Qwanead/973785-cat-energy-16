@@ -1,0 +1,24 @@
+.slogan {
+  // background-color: #000000;
+  // background-image: url("img/index-background-mobile@1x.jpg");
+  background-image: url("../img/index-background-mobile@1x.jpg");
+  background-repeat: no-repeat;
+
+}
+
+.slogan__header {
+  color: #ffffff;
+  font-family: Oswald;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 36px;
+}
+
+.slogan__content {
+  color: #ffffff;
+  font-family: Oswald;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 14px;
+  text-transform: uppercase;
+}

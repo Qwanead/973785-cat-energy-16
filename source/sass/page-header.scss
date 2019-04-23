@@ -1,0 +1,10 @@
+.page-header__logo-image {
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+  }
+
+  &:active{
+    opacity: 0.6;
+  }
+}
