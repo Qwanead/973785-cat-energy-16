@@ -1,37 +1,35 @@
 .button {
-  color: #ffffff;
-  font-family: Oswald;
+  color: $contrast-color;
+  font-family: "Oswald", "Arial MT", sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 20px;
   text-transform: uppercase;
 
-  background-color: #68b738;
+  background-color: $btn-color;
 
   &:hover,
   &:focus {
-    background-color: #5eaa2f;
+    background-color: $btn-hvr-color;
   }
 
   &:active {
-    opacity: 0.3;
-    color: rgba(255, 255, 255, 0.3);
-    background-color: #5eaa2f;
+    color: $btn-act-text-color;
+    background-color: $btn-act-color;
   }
 
   &--to-all {
-    color: #444444;
-    background-color: #f2f2f2;;
+    color: $btn-all-text-color;
+    background-color: $btn-all-color;
 
     &:hover,
     &:focus {
-      background-color: #ebebeb;
+      background-color: $btn-all-hvr-color;
     }
 
     &:active {
-      opacity: 0.3;
-      color: rgba(68, 68, 68, 0.3);
-      background-color: #ebebeb;
+      color: $btn-all-act-text-color;
+      background-color: $btn-all-hvr-color;
     }
   }
 }

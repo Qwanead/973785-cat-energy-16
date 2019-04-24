@@ -4,18 +4,17 @@
     opacity: 0.8;
   }
 
-  &:active{
+  &:active {
     opacity: 0.6;
   }
 }
 
-.copyright__title {
-  color: #444444;
+.page-footer__copyright {
+  color: $content-text-color;
   font-size: 16px;
   line-height: 16px;
 
   &:active {
-    opacity: 0.3;
-    color: rgba(68, 68, 68, 0.3);
+    color: $btn-all-act-text-color;
   }
 }

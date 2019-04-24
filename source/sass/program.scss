@@ -3,8 +3,8 @@
 }
 
 .program__header {
-  color: #111111;
-  font-family: Oswald;
+  color: $header-color;
+  font-family: "Oswald", "Arial MT", sans-serif;
   font-size: 24px;
   font-weight: 400;
   line-height: 37.02px;
@@ -12,14 +12,14 @@
 }
 
 .program__catalog {
-  color: #111111;
-  font-family: Oswald;
+  color: $header-color;
+  font-family: "Oswald", "Arial MT", sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 16px;
   text-transform: uppercase;
 
   &:active {
-    color: rgba(17, 17, 17, 0.3);
+    color: $program-link-act-color;
   }
 }

@@ -1,8 +1,8 @@
-// @import "normalize.scss";
+@import "normalize.scss";
+@import "variables.scss";
 @import "fonts.scss";
 @import "visually-hidden.scss";
 @import "body.scss";
-
 @import "page-header.scss";
 @import "main-nav";
 @import "slogan.scss";
@@ -10,8 +10,6 @@
 @import "programs.scss";
 @import "program.scss";
 @import "advantages.scss";
-
 @import "page-main.scss";
 @import "catalog-item.scss";
-
 @import "page-footer.scss";
