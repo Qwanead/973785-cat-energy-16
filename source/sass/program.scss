@@ -1,0 +1,25 @@
+.program {
+  background-color: #cdcdcd;
+}
+
+.program__header {
+  color: $header-color;
+  font-family: "Oswald", "Arial MT", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 37.02px;
+  text-transform: uppercase;
+}
+
+.program__catalog {
+  color: $header-color;
+  font-family: "Oswald", "Arial MT", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+  text-transform: uppercase;
+
+  &:active {
+    color: $program-link-act-color;
+  }
+}

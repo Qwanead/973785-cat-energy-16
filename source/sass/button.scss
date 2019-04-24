@@ -1,0 +1,35 @@
+.button {
+  color: $contrast-color;
+  font-family: "Oswald", "Arial MT", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  text-transform: uppercase;
+
+  background-color: $btn-color;
+
+  &:hover,
+  &:focus {
+    background-color: $btn-hvr-color;
+  }
+
+  &:active {
+    color: $btn-act-text-color;
+    background-color: $btn-act-color;
+  }
+
+  &--to-all {
+    color: $btn-all-text-color;
+    background-color: $btn-all-color;
+
+    &:hover,
+    &:focus {
+      background-color: $btn-all-hvr-color;
+    }
+
+    &:active {
+      color: $btn-all-act-text-color;
+      background-color: $btn-all-hvr-color;
+    }
+  }
+}

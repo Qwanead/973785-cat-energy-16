@@ -1,0 +1,21 @@
+.slogan {
+  background-image: url("../img/index-background-mobile@1x.jpg");
+  background-repeat: no-repeat;
+}
+
+.slogan__header {
+  color: $contrast-color;
+  font-family: "Oswald", "Arial MT", sans-serif;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 36px;
+}
+
+.slogan__content {
+  color: $contrast-color;
+  font-family: "Oswald", "Arial MT", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 14px;
+  text-transform: uppercase;
+}

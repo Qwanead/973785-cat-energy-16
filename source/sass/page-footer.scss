@@ -1,0 +1,20 @@
+.page-footer__logo {
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
+
+.page-footer__copyright {
+  color: $content-text-color;
+  font-size: 16px;
+  line-height: 16px;
+
+  &:active {
+    color: $btn-all-act-text-color;
+  }
+}
