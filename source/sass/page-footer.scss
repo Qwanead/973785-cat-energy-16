@@ -1,4 +1,19 @@
+.page-footer {
+  background-color: $background-block-color;
+}
+
+.page-footer__social {
+  display: flex;
+}
+
 .page-footer__logo {
+  width: 100%;
+  padding-top: 15px;
+  padding-bottom: 25px;
+
+  text-align: center;
+  border-bottom: 1px solid $line-program-color;
+
   &:hover,
   &:focus {
     opacity: 0.8;
@@ -10,11 +25,30 @@
 }
 
 .page-footer__copyright {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 10px;
+
   color: $content-text-color;
   font-size: 16px;
   line-height: 16px;
 
   &:active {
     color: $btn-all-act-text-color;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .page-footer__logo {
+    padding: 0;
+
+    text-align: left;
+    border-bottom: none;
+  }
+
+  .page-footer__copyright {
+    justify-content: flex-end;
   }
 }

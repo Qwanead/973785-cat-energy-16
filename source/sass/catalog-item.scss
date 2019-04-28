@@ -1,8 +1,25 @@
 .catalog-item {
+  display: flex;
+  flex-direction: column;
+  width: 280px;
+  padding-bottom: 20px;
+
   border-bottom: 1px solid $line-catalor-color;
+
+  &--to-all {
+    .catalog-item__wraper {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .catalog-item__title {
+      padding: 0;
+    }
+  }
 }
 
 .catalog-item__title {
+  padding-right: 60px;
   color: $header-color;
   font-family: "Oswald", "Arial MT", sans-serif;
   font-size: 16px;
@@ -11,6 +28,92 @@
   text-transform: uppercase;
 }
 
+.catalog-item__wraper {
+  display: flex;
+  margin-bottom: 5px;
+}
+
+.catalog-item__image-wraper {
+  display: flex;
+  flex-direction: column;
+}
+
+.catalog-item__image {
+  order: -1;
+}
+
 .catalog-item__attributes {
+  font-size: 12px;
   line-height: 16px;
+}
+
+.catalog-item__attributes-value {
+  font-size: 12px;
+  line-height: 16px;
+  text-align: right;
+}
+
+@media (min-width: $tablet-width) {
+  .catalog-item {
+    align-items: center;
+    width: 324px;
+    margin-top: 125px;
+    padding-top: 140px;
+    padding-right: 35px;
+    padding-left: 35px;
+
+    background-color: $background-block-color;
+
+    &--to-all {
+      border: 1px solid $line-catalor-color;
+      background-color: $contrast-color;
+
+      .catalog-item__attributes {
+        width: 180px;
+        text-align: center;
+      }
+
+      .catalog-item__image {
+        position: static;
+      }
+    }
+  }
+
+  .catalog-item__wraper {
+    position: relative;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .catalog-item__title {
+    align-self: center;
+    width: 150px;
+    padding-right: 0;
+
+    font-size: 20px;
+    line-height: 20px;
+    text-align: center;
+  }
+
+  .catalog-item__attributes,
+  .catalog-item__attributes-value {
+    font-size: 16px;
+    line-height: 16px;
+  }
+
+  .catalog-item__image {
+    position: absolute;
+    top: -230px;
+  }
+
+  .catalog-item__image-wraper {
+    width: 100%;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .catalog-item {
+    width: 245px;
+    min-height: 432px;
+  }
 }
