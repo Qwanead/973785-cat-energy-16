@@ -1,8 +1,10 @@
 @import "normalize.scss";
 @import "variables.scss";
+@import "mixins.scss";
 @import "fonts.scss";
 @import "visually-hidden.scss";
-@import "body.scss";
+@import "scaffolding.scss";
+@import "layout-positioner.scss";
 @import "page-header.scss";
 @import "main-nav";
 @import "slogan.scss";
@@ -13,3 +15,5 @@
 @import "page-main.scss";
 @import "catalog-item.scss";
 @import "page-footer.scss";
+@import "page-footer__wraper.scss";
+@import "social.scss";

@@ -1,3 +1,8 @@
+.page-main {
+  display: flex;
+  flex-direction: column;
+}
+
 .page-main__header {
   color: $header-color;
   font-family: "Oswald", "Arial MT", sans-serif;
@@ -7,5 +12,22 @@
 }
 
 .page-main__catalog {
-  list-style: none;
+  @include list-reset;
+
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: $tablet-width) {
+  .page-main__header {
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  .page-main__catalog {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 70px;
+  }
 }

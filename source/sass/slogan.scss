@@ -1,21 +1,108 @@
 .slogan {
+  width: 320px;
+  margin: 0 auto;
+  padding: 0 20px;
+  margin-bottom: 20px;
+
   background-image: url("../img/index-background-mobile@1x.jpg");
   background-repeat: no-repeat;
+  background-clip: border-box;
 }
 
 .slogan__header {
+  margin-bottom: 25px;
+
   color: $contrast-color;
   font-family: "Oswald", "Arial MT", sans-serif;
   font-size: 36px;
   font-weight: 400;
   line-height: 36px;
+  text-align: center;
 }
 
 .slogan__content {
+  margin-bottom: 25px;
+
   color: $contrast-color;
   font-family: "Oswald", "Arial MT", sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 14px;
   text-transform: uppercase;
+  text-align: center;
+}
+
+@media (min-width: $tablet-width) {
+  .slogan {
+    position: relative;
+    width: 470px;
+    min-height: 520px;
+    padding: 0;
+
+    background-image: none;
+  }
+
+  .slogan__header {
+    padding: 0;
+    color: $header-color;
+    font-size: 60px;
+    font-weight: 400;
+    line-height: 60px;
+
+    text-align: left;
+  }
+
+  .slogan__content {
+    padding-top: 20px;
+
+    color: $header-color;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: left;
+  }
+
+  .slogan__image {
+    position: absolute;
+    z-index: -1;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .slogan {
+    position: relative;
+    left: -295px;
+    min-height: 635px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 530px;
+      top: -125px;
+      z-index: -2;
+      width: 720px;
+      height: 696px;
+
+      background-color: $background-slogan;
+      background-image: url("../img/index-background-desktop@1x.jpg");
+    }
+  }
+
+  .slogan__header {
+    padding-top: 50px;
+
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  .slogan__content {
+    padding-top: 15px;
+    padding-bottom: 30px;
+  }
+
+  .slogan__image {
+    top: 0;
+    left: 450px;
+    overflow: visible;
+  }
 }
