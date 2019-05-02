@@ -35,9 +35,10 @@
 @media (min-width: $tablet-width) {
   .slogan {
     position: relative;
-    width: 470px;
+    width: 530px;
     min-height: 520px;
     padding: 0;
+    margin-bottom: 337px;
 
     background-image: none;
   }
@@ -53,7 +54,8 @@
   }
 
   .slogan__content {
-    padding-top: 20px;
+    margin-top: 40px;
+    margin-bottom: 45px;
 
     color: $header-color;
     font-size: 20px;
@@ -71,8 +73,9 @@
 @media (min-width: $desktop-width) {
   .slogan {
     position: relative;
-    left: -295px;
+    left: -265px;
     min-height: 635px;
+    margin-bottom: 15px;
 
     &::before {
       content: "";
@@ -96,8 +99,8 @@
   }
 
   .slogan__content {
-    padding-top: 15px;
-    padding-bottom: 30px;
+    margin-top: 40px;
+    margin-bottom: 55px;
   }
 
   .slogan__image {
