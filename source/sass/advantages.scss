@@ -1,5 +1,5 @@
 .advantages {
-  margin-top: 65px;
+  margin-top: -15px;
 }
 
 .adbvantages__header {
@@ -64,6 +64,10 @@
 }
 
 @media (min-width: $tablet-width) {
+  .advantages {
+    margin-top: 65px;
+  }
+
   .adbvantages__header {
     margin-bottom: -5px;
 
