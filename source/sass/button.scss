@@ -25,6 +25,11 @@
     background-color: $btn-act-color;
   }
 
+  &--catalog {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
   &--to-all {
     color: $btn-all-text-color;
     background-color: $btn-all-color;
@@ -48,5 +53,12 @@
 
     font-size: 20px;
     line-height: 20px;
+
+    &--catalog {
+      width: 100%;
+      padding: 10px;
+      font-size: 16px;
+      line-height: 20px;
+    }
   }
 }
