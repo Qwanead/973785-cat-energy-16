@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   width: 280px;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
 
   border-top: 1px solid $line-catalor-color;
 
@@ -13,18 +13,23 @@
     }
 
     .catalog-item__title {
-      margin-top: 25px;
+      margin-top: 20px;
       padding: 0;
     }
 
     .catalog-item__attributes {
       margin-top: 6px;
-      margin-bottom: 22px;
+      margin-bottom: 27px;
+    }
+
+    .catalog-item__picture {
+      min-width: 30px;
+      margin-top: 25px;
     }
 
     .catalog-item__image {
-      margin-top: 25px;
       min-height: 30px;
+      height: 30px;
     }
   }
 }
@@ -43,6 +48,7 @@
 
 .catalog-item__wraper {
   display: flex;
+  margin-bottom: -5px;
 }
 
 .catalog-item__image-wraper {
@@ -51,9 +57,12 @@
   justify-content: flex-start;
 }
 
-.catalog-item__image {
-  min-height: 147.5px;
+.catalog-item__picture {
   order: -1;
+}
+
+.catalog-item__image {
+  min-width: 140px;
 }
 
 .catalog-item__attributes {
@@ -88,20 +97,29 @@
     border: none;
 
     &--to-all {
-      margin-top: 80px;
+      padding-top: 27px;
 
       border: 1px solid $line-catalor-color;
       background-color: $contrast-color;
 
+      .catalog-item__title {
+        margin-top: 40px;
+      }
+
       .catalog-item__attributes {
         width: 180px;
         margin-top: 30px;
-        margin-bottom: 50px;
+        margin-bottom: 55px;
         text-align: center;
       }
 
-      .catalog-item__image {
+      .catalog-item__picture {
         position: static;
+      }
+
+      .catalog-item__image {
+        min-width: 60px;
+        height: 60px;
       }
     }
   }
@@ -110,7 +128,7 @@
     position: relative;
     justify-content: center;
     width: 100%;
-    margin-bottom: 35px;
+    margin-bottom: 32px;
   }
 
   .catalog-item__title {
@@ -139,9 +157,17 @@
     line-height: 16px;
   }
 
-  .catalog-item__image {
+  .catalog-item__picture {
     position: absolute;
-    top: -230px;
+    top: -190px;
+
+    &--big {
+      top: -225px;
+    }
+  }
+
+  .catalog-item__image {
+    min-width: 325px;
   }
 
   .catalog-item__image-wraper {
@@ -153,10 +179,10 @@
   .catalog-item {
     width: 245px;
     min-height: 430px;
+    margin-top: 137px;
+  }
 
-    &--to-all {
-      margin-top: 135px;
-      padding-top: 85px;
-    }
+  .catalog-item__image {
+    min-width: 245px;
   }
 }

@@ -7,6 +7,11 @@
   background-image: url("../img/index-background-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-clip: border-box;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/index-background-mobile@2x.jpg");
+    background-size: contain;
+  }
 }
 
 .slogan__header {
@@ -38,12 +43,13 @@
     width: 530px;
     min-height: 520px;
     padding: 0;
-    margin-bottom: 337px;
+    margin-bottom: 320px;
 
     background-image: none;
   }
 
   .slogan__header {
+    margin-top: 30px;
     padding: 0;
     color: $header-color;
     font-size: 60px;
@@ -55,7 +61,7 @@
 
   .slogan__content {
     margin-top: 40px;
-    margin-bottom: 45px;
+    margin-bottom: 50px;
 
     color: $header-color;
     font-size: 20px;
@@ -66,7 +72,11 @@
 
   .slogan__image {
     position: absolute;
+    top: 230px;
+    left: -90px;
     z-index: -1;
+    min-width: 709px;
+    height: 609px;
   }
 }
 
@@ -75,24 +85,29 @@
     position: relative;
     left: -265px;
     min-height: 635px;
-    margin-bottom: 15px;
+    margin-bottom: 5px;
 
     &::before {
       content: "";
       position: absolute;
       left: 530px;
-      top: -125px;
+      top: -135px;
       z-index: -2;
       width: 720px;
       height: 696px;
 
       background-color: $background-slogan;
       background-image: url("../img/index-background-desktop@1x.jpg");
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/index-background-desktop@2x.jpg");
+        background-size: cover;
+      }
     }
   }
 
   .slogan__header {
-    padding-top: 50px;
+    padding-top: 55px;
 
     font-size: 60px;
     line-height: 60px;
@@ -104,8 +119,10 @@
   }
 
   .slogan__image {
-    top: 0;
-    left: 450px;
+    top: 5px;
+    left: 370px;
     overflow: visible;
+    min-width: 552px;
+    height: 499px;
   }
 }

@@ -85,9 +85,9 @@
     color: $program-link-act-color;
   }
 
-  &::before {
+  &::after {
     position: absolute;
-    top: 8px;
+    top: 5px;
     right: 0;
 
     width: 25px;
@@ -147,6 +147,10 @@
     border-bottom: none;
   }
 
+  .program__header--pro + .program__content {
+    padding-right: 295px;
+  }
+
   .program__catalog {
     display: inline-block;
     max-width: 400px;
@@ -201,6 +205,10 @@
 
   .program__content {
     padding-right: 50px;
+  }
+
+  .program__header--pro + .program__content {
+    padding-right: inherit;
   }
 
   .program__catalog {

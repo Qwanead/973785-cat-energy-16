@@ -17,10 +17,15 @@
   text-align: center;
 
   border-top: 1px solid $line-catalor-color;
-}
 
-li:nth-last-child(1) .main-nav__item {
-  border-bottom: 1px solid $line-catalor-color;
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -31,6 +36,7 @@ li:nth-last-child(1) .main-nav__item {
   }
 
   .main-nav__item {
+    padding-top: 25px;
     padding-right: 0;
     padding-left: 0;
     font-size: 18px;
@@ -41,11 +47,12 @@ li:nth-last-child(1) .main-nav__item {
     &:not([href]) {
       padding-bottom: 7px;
       border-bottom: 2px solid $btn-color;
-    }
-  }
 
-  li:nth-last-child(1) .main-nav__item {
-    border-bottom: none;
+      &:hover,
+      &:focus {
+        opacity: 1;
+      }
+    }
   }
 }
 
