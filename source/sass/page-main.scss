@@ -4,7 +4,9 @@
 }
 
 .page-main__header {
+  margin-top: 0;
   margin-bottom: 0;
+  padding-top: 15px;
   padding-bottom: 28px;
   color: $header-color;
   font-family: "Oswald", "Arial MT", sans-serif;
@@ -12,6 +14,7 @@
   font-weight: 400;
   line-height: 60px;
 
+  border-top: 1px solid $background-block-color;
   border-bottom: 1px solid $background-block-color;
 }
 
@@ -24,6 +27,8 @@
 
 @media (min-width: $tablet-width) {
   .page-main__header {
+    margin-top: 30px;
+    padding-top: 0;
     font-size: 60px;
     line-height: 60px;
     border: none;
@@ -33,12 +38,17 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
+    margin-top: 5px;
     margin-bottom: 70px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .page-main__header {
-    margin-top: 65px;
+    margin-top: 55px;
+  }
+
+  .page-main__catalog {
+    margin-top: 0;
   }
 }
