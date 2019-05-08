@@ -45,26 +45,23 @@
 
   &:hover,
   &:focus {
-    path {
-      fill: $btn-color;
+    .page-footer__copyright-logo {
+      color: $btn-color;
     }
   }
 
   &:active {
     opacity: 0.3;
 
-    path {
-      fill: $btn-color;
+    .page-footer__copyright-logo {
+      color: $btn-color;
     }
   }
 }
 
 .page-footer__copyright-logo {
   margin-right: -5px;
-
-  path {
-    fill: $icon-color;
-  }
+  color: $icon-color;
 }
 
 @media (min-width: $tablet-width) {
