@@ -15,30 +15,21 @@
   width: 22px;
   height: 22px;
   font-size: 0;
+  color: $icon-color;
 
   svg {
     width: 22px;
     height: 12px;
   }
 
-  path {
-    fill: $icon-color;
-  }
-
   &:hover,
   &:focus {
-    path,
-    circle {
-      fill: $btn-color;
-    }
+    color: $btn-color;
   }
 
   &:active {
-    path,
-    circle {
-      fill: $btn-color;
-      opacity: 0.3;
-    }
+    color: $btn-color;
+    opacity: 0.3;
   }
 
   &--facebook {
