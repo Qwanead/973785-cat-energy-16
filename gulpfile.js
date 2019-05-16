@@ -13,6 +13,9 @@ var del = require("del");
 var imagemin = require("gulp-imagemin");
 var svgstore = require("gulp-svgstore");
 var webp = require("gulp-webp");
+var htmlmin = require('gulp-htmlmin');
+var uglify = require('gulp-uglify');
+var pipeline = require('readable-stream').pipeline;
 
 gulp.task("css", function () {
   return gulp.src("source/sass/style.scss")
@@ -31,12 +34,16 @@ gulp.task("css", function () {
 
 gulp.task("html", function () {
 return gulp.src("source/*.html")
+  .pipe(htmlmin({ collapseWhitespace: true }))
   .pipe(gulp.dest("build"));
 });
 
 gulp.task("js", function () {
-return gulp.src("source/js/*.js")
-  .pipe(gulp.dest("build/js"));
+  return pipeline(
+    gulp.src("source/js/*.js"),
+    uglify(),
+    gulp.dest("build/js")
+  );
 });
 
 gulp.task("copy", function () {
