@@ -52,6 +52,7 @@
 
 @media (min-width: $tablet-width) {
   .social {
+    flex: 0 0 360px;
     border-bottom: none;
     align-items: center;
   }
@@ -84,5 +85,11 @@
         height: 23px;
       }
     }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .social {
+    flex: 0 0 840px;
   }
 }
