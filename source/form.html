@@ -34,10 +34,89 @@
       </nav>
     </header>
 
-    <main class="page-main">
+    <main class="page-form">
+      <h1>Подбор программы</h1>
+      <p>Заполните анкету и мы подберем программу питания для вашего кота</p>
+      <form method="get" action="https://echo.htmlacademy.ru">
+        <ul class="layout-positioner">
+          <li>
+            <label for="name-id">Имя:<sup>*</sup></label>
+            <input type="text" name="name" id="name-id" placeholder="Барсик" required>
+          </li>
+          <li>
+            <label for="weight-id">Вес (кг):<sup>*</sup></label>
+            <input type="text" name="weight" id="weight-id" placeholder="7" required>
+          </li>
+          <li>
+            <label for="age-id">Возраст (лет):</label>
+            <input type="text" name="age" id="age-id" placeholder="7">
+          </li>
+        </ul>
+
+        <ul class="layout-positioner">
+          <li>
+            <input type="radio" name="program" id="decrease-id" value="decrease" checked>
+            <label for="decrease-id">Похудение<label>
+          </li>
+          <li>
+            <input type="radio" name="program" id="increase-id" value="increase">
+            <label for="increase-id">Набор массы<label>
+          </li>
+          <li>
+            <input type="radio" name="program" id="dontknow-id" value="dontknow">
+            <label for="dontknow-id">Не знаю (Нужен ваш совет)<label>
+          </li>
+        </ul>
+
+        <h2>Контактные данные (владельца кота)</h2>
+        <ul class="layout-positioner">
+          <li>
+            <label for="mail-id">E-mail:<sup>*</sup></label>
+            <input type="email" name="mail" id="mail-id" placeholder="kuklachev@gmail.com" required>
+          </li>
+          <li>
+            <label for="tel-id">Телефон:<sup>*</sup></label>
+            <input type="tel" name="tel" id="tel-id" placeholder="8 (960) 900-60-90" required>
+          </li>
+        </ul>
+
+        <h2>Комментарий</h2>
+        <input class="layout-positioner" type="textarea" placeholder="Расскажите обо всех повадках кота">
+
+        <h2>Дополнительно</h2>
+        <ul class="layout-positioner">
+          <li>
+            <input type="checkbox" name="sugar" id="sugar-id" checked>
+            <label for="sugar-id">Сахарозаменитель</label>
+          </li>
+          <li>
+            <input type="checkbox" name="water" id="water-id">
+            <label for="water-id">Питьевая вода</label>
+          </li>
+          <li>
+            <input type="checkbox" name="milk" id="milk-id">
+            <label for="milk-id">Молоко</label>
+          </li>
+          <li>
+            <input type="checkbox" name="vitamin" id="vitamin-id">
+            <label for="vitamin-id">Витамины</label>
+          </li>
+        </ul>
+
+        <button class="button" type="submit">Отправить заявку</button>
+        <p><sup>*</sup> — Обязательные поля</p>
+      </form>
     </main>
 
     <footer class="page-footer">
+
+      <section class="page-footer__contacts layout-positioner">
+        <p class="page-footer__contacts-title">Приглашаем к&nbsp;сотрудничеству дилеров!</p>
+        <p class="page-footer__contacts-address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+      </section>
+
+      <iframe class="page-footer__map layout-positioner" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d706.6165339601158!2d30.323493298865795!3d59.93855745763567!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca640933%3A0x8403eb878242dbd5!2z0JTQvtGF0L7QtNC90YvQuSDQtNC-0Lwg0J0uINCQLiDQnNC10LvRjNGG0LXRgNCw!5e0!3m2!1sru!2sru!4v1558166080636!5m2!1sru!2sru" width="320px" height="360px" frameborder="0" style="border:0" allowfullscreen></iframe>
+
       <div class="page-footer__wraper layout-positioner">
         <a class="page-footer__logo" href="index.html">
           <img src="img/logo-footer.svg" width="128" height="24" alt="Cat energy">
