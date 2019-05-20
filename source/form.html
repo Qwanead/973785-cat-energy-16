@@ -39,37 +39,39 @@
       <p class="page-main__description layout-positioner">Заполните анкету и мы подберем программу питания для вашего кота</p>
 
       <form class="form" method="post" action="https://echo.htmlacademy.ru">
-        <h2 class="visually-hidden">Данные кота</h2>
-        <ul class="input__list form__cat layout-positioner">
-          <li class="input__list-item">
-            <label class="input__label" for="name-id">Имя:*</label>
-            <input class="input__text" type="text" name="name" id="name-id" placeholder="Барсик" required>
-          </li>
-          <li class="input__list-item">
-            <label class="input__label" for="weight-id">Вес (кг):*</label>
-            <input class="input__text" type="text" name="weight" id="weight-id" placeholder="7" required>
-          </li>
-          <li class="input__list-item">
-            <label class="input__label" for="age-id">Возраст (лет):</label>
-            <input class="input__text" type="text" name="age" id="age-id" placeholder="7">
-          </li>
-        </ul>
+        <div class=form__blocks-wraper>
+          <h2 class="visually-hidden">Данные кота</h2>
+          <ul class="input__list form__cat layout-positioner">
+            <li class="input__list-item">
+              <label class="input__label" for="name-id">Имя:*</label>
+              <input class="input__text" type="text" name="name" id="name-id" placeholder="Барсик" required>
+            </li>
+            <li class="input__list-item">
+              <label class="input__label" for="weight-id">Вес (кг):*</label>
+              <input class="input__text" type="text" name="weight" id="weight-id" placeholder="7" required>
+            </li>
+            <li class="input__list-item">
+              <label class="input__label" for="age-id">Возраст (лет):</label>
+              <input class="input__text" type="text" name="age" id="age-id" placeholder="7">
+            </li>
+          </ul>
 
-        <h2 class="visually-hidden">Программа</h2>
-        <ul class="input__list form__programm layout-positioner">
-          <li class="input__list-item input__list-item--radio">
-            <input class="input__radio visually-hidden" type="radio" name="program" id="decrease-id" value="decrease" checked>
-            <label class="input__label input__label--radio" for="decrease-id">Похудение</label>
-          </li>
-          <li class="input__list-item input__list-item--radio">
-            <input class="input__radio visually-hidden" type="radio" name="program" id="increase-id" value="increase">
-            <label class="input__label input__label--radio" for="increase-id">Набор массы</label>
-          </li>
-          <li class="input__list-item input__list-item--radio">
-            <input class="input__radio visually-hidden" type="radio" name="program" id="dontknow-id" value="dontknow">
-            <label class="input__label input__label--radio" for="dontknow-id">Не знаю (Нужен ваш совет)</label>
-          </li>
-        </ul>
+          <h2 class="visually-hidden">Программа</h2>
+          <ul class="input__list form__programm layout-positioner">
+            <li class="input__list-item input__list-item--radio">
+              <input class="input__radio visually-hidden" type="radio" name="program" id="decrease-id" value="decrease" checked>
+              <label class="input__label input__label--radio" for="decrease-id">Похудение</label>
+            </li>
+            <li class="input__list-item input__list-item--radio">
+              <input class="input__radio visually-hidden" type="radio" name="program" id="increase-id" value="increase">
+              <label class="input__label input__label--radio" for="increase-id">Набор массы</label>
+            </li>
+            <li class="input__list-item input__list-item--radio">
+              <input class="input__radio visually-hidden" type="radio" name="program" id="dontknow-id" value="dontknow">
+              <label class="input__label input__label--radio" for="dontknow-id">Не знаю (Нужен ваш совет)</label>
+            </li>
+          </ul>
+        </div>
 
 
         <h2 class="page-main__subtitle page-main__subtitle--2rows layout-positioner">Контактные данные (владельца кота)</h2>
@@ -124,13 +126,14 @@
     </main>
 
     <footer class="page-footer">
-
+      <div class="page-footer__map-wraper">
       <section class="page-footer__contacts layout-positioner">
         <p class="page-footer__contacts-title">Приглашаем к&nbsp;сотрудничеству дилеров!</p>
-        <p class="page-footer__contacts-address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
-      </section>
+        <p class="page-footer__contacts-address">ул. Большая Конюшенная, д. 19/8 <span class="page-footer__contacts-city">Санкт-Петербург</span></p>
+        </section>
 
-      <iframe class="page-footer__map layout-positioner" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533277!2d30.320858716096975!3d59.93871648187614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1558252123015!5m2!1sru!2sru" width="320px" height="360px" frameborder="0" style="border:0" allowfullscreen></iframe>
+        <iframe class="page-footer__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.593530267094!2d30.320837316108992!3d59.938886669040656!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTnCsDU2JzIwLjAiTiAzMMKwMTknMjIuOSJF!5e0!3m2!1sru!2sru!4v1558330710990!5m2!1sru!2sru" width="320px" height="360px" frameborder="0" style="border:0" allowfullscreen></iframe>
+      </div>
 
       <div class="page-footer__wraper layout-positioner">
         <a class="page-footer__logo" href="index.html">

@@ -22,8 +22,15 @@
   line-height: 20px;
 }
 
+.page-footer__map-wraper {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
 .page-footer__map {
   display: block;
+  width: 100%;
   padding: 0;
 }
 
@@ -91,6 +98,35 @@
 }
 
 @media (min-width: $tablet-width) {
+  .page-footer__contacts {
+    width: 630px;
+    padding-top: 45px;
+    padding-bottom: 40px;
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  .page-footer__contacts-title {
+    width: 160px;
+
+    font-size: 20px;
+    line-height: 25px;
+  }
+
+  .page-footer__contacts-address {
+    width: 160px;
+    text-align: right;
+  }
+
+  .page-footer__contacts-city {
+    display: block;
+    padding-top: 24px;
+  }
+
+  .page-footer__map {
+    height: 400px;
+  }
+
   .page-footer__wraper {
     flex-direction: row;
     justify-content: center;
@@ -116,11 +152,32 @@
     padding-right: 12px;
   }
 
-
   .page-footer__copyright-logo {
     width: 45px;
     height: 45px;
     margin-right: -8px;
     padding-top: 5px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-footer__map-wraper {
+    position: relative;
+  }
+
+  .page-footer__contacts {
+    position: absolute;
+    width: 570px;
+    height: 201px;
+    top: 92px;
+    left: 110px;
+    padding-left: 80px;
+    padding-right: 80px;
+
+    background-color: $contrast-color;
+  }
+
+  .page-footer__contacts-address {
+    text-align: left;
   }
 }
