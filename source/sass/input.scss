@@ -1,0 +1,137 @@
+.input__list {
+  list-style: none;
+}
+
+.input__list-item {
+  display: flex;
+  align-items: baseline;
+  margin-bottom: 14px;
+}
+
+.input__label {
+  flex-shrink: 0;
+
+  padding-right: 15px;
+  color: $label-color;
+  font-family: "Oswald", "Arial MT", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.input__text {
+  display: inline;
+  width: 100%;
+  height: 45px;
+  padding: 14px;
+  border: 1px solid $input-border-color;
+
+  &:hover {
+    border: 1px solid $input-radio-color;
+  }
+
+  &:focus,
+  &:active {
+    border: 2px solid $placeholder-color;
+  }
+
+  &::placeholder {
+    color: $placeholder-color;
+    font-family: "Oswald", "Arial MT", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18px;
+    text-transform: uppercase;
+  }
+}
+
+.input__textarea {
+  display: block;
+  height: 150px;
+  padding-right: 10px;
+
+  vertical-align: top;
+  border: 1px solid $input-border-color;
+}
+
+.input__list-item--radio {
+  margin-bottom: 25px;
+}
+
+.input__label--radio {
+  position: relative;
+  padding-left: 45px;
+
+  &::before {
+    position: absolute;
+    top: -5px;
+    left: 0;
+    width: 30px;
+    height: 30px;
+
+    background-color: $contrast-color;
+    border-radius: 50%;
+    border: 1px solid $input-radio-color;
+    content: "";
+  }
+
+  &:hover {
+    &::before {
+      border: 1px solid $input-radio-hvr-color;
+    }
+  }
+}
+
+.input__radio:checked + .input__label--radio::after {
+  position: absolute;
+  top: 4px;
+  left: 9px;
+  width: 12px;
+  height: 12px;
+
+  background-color: $btn-color;
+  border-radius: 50%;
+  content: "";
+}
+
+.input__list-item--checkbox {
+  margin-bottom: 25px;
+}
+
+.input__label--checkbox {
+  position: relative;
+  padding-left: 45px;
+
+  &::before {
+    position: absolute;
+    top: -5px;
+    left: 0;
+    width: 30px;
+    height: 30px;
+
+    background-color: $contrast-color;
+    border: 1px solid $input-radio-color;
+    content: "";
+  }
+
+  &:hover {
+    &::before {
+      border: 1px solid $input-radio-hvr-color;
+    }
+  }
+}
+
+.input__checkbox:checked + .input__label--checkbox::after {
+  position: absolute;
+  top: 0;
+  left: 4px;
+  width: 24px;
+  height: 20px;
+
+  background-image: url("../img/icon-tick.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 50%;
+  content: "";
+}

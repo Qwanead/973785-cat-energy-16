@@ -40,50 +40,50 @@
 
       <form class="form" method="post" action="https://echo.htmlacademy.ru">
         <h2 class="visually-hidden">Данные кота</h2>
-        <ul class="form__cat layout-positioner">
-          <li>
-            <label for="name-id">Имя:*</label>
-            <input type="text" name="name" id="name-id" placeholder="Барсик" required>
+        <ul class="input__list form__cat layout-positioner">
+          <li class="input__list-item">
+            <label class="input__label" for="name-id">Имя:*</label>
+            <input class="input__text" type="text" name="name" id="name-id" placeholder="Барсик" required>
           </li>
-          <li>
-            <label for="weight-id">Вес (кг):*</label>
-            <input type="text" name="weight" id="weight-id" placeholder="7" required>
+          <li class="input__list-item">
+            <label class="input__label" for="weight-id">Вес (кг):*</label>
+            <input class="input__text" type="text" name="weight" id="weight-id" placeholder="7" required>
           </li>
-          <li>
-            <label for="age-id">Возраст (лет):</label>
-            <input type="text" name="age" id="age-id" placeholder="7">
+          <li class="input__list-item">
+            <label class="input__label" for="age-id">Возраст (лет):</label>
+            <input class="input__text" type="text" name="age" id="age-id" placeholder="7">
           </li>
         </ul>
 
         <h2 class="visually-hidden">Программа</h2>
-        <ul class="form__programm layout-positioner">
-          <li>
-            <input class="form__radio visually-hidden" type="radio" name="program" id="decrease-id" value="decrease" checked>
-            <label for="decrease-id">Похудение</label>
+        <ul class="input__list form__programm layout-positioner">
+          <li class="input__list-item input__list-item--radio">
+            <input class="input__radio visually-hidden" type="radio" name="program" id="decrease-id" value="decrease" checked>
+            <label class="input__label input__label--radio" for="decrease-id">Похудение</label>
           </li>
-          <li>
-            <input class="form__radio visually-hidden" type="radio" name="program" id="increase-id" value="increase">
-            <label for="increase-id">Набор массы</label>
+          <li class="input__list-item input__list-item--radio">
+            <input class="input__radio visually-hidden" type="radio" name="program" id="increase-id" value="increase">
+            <label class="input__label input__label--radio" for="increase-id">Набор массы</label>
           </li>
-          <li>
-            <input class="form__radio visually-hidden" type="radio" name="program" id="dontknow-id" value="dontknow">
-            <label for="dontknow-id">Не знаю (Нужен ваш совет)</label>
+          <li class="input__list-item input__list-item--radio">
+            <input class="input__radio visually-hidden" type="radio" name="program" id="dontknow-id" value="dontknow">
+            <label class="input__label input__label--radio" for="dontknow-id">Не знаю (Нужен ваш совет)</label>
           </li>
         </ul>
 
 
         <h2 class="page-main__subtitle page-main__subtitle--2rows layout-positioner">Контактные данные (владельца кота)</h2>
-        <ul class="form__contacts layout-positioner">
-          <li class="form__contats-item">
-            <label for="mail-id">E-mail:*</label>
-            <input class="form__contats-input" type="email" name="mail" id="mail-id" placeholder="kuklachev@gmail.com" required>
+        <ul class="input__list form__contacts layout-positioner">
+          <li class="input__list-item form__contats-item">
+            <label class="input__label" for="mail-id">E-mail:*</label>
+            <input class="input__text form__contats-input" type="email" name="mail" id="mail-id" placeholder="kuklachev@gmail.com" required>
             <svg width="17px" height="13px">
               <use xlink:href="img/sprite-icons.svg#icon-mail"></use>
             </svg>
           </li>
-          <li class="form__contats-item">
-            <label for="tel-id">Телефон:*</label>
-            <input class="form__contats-input" type="tel" name="tel" id="tel-id" placeholder="8 (960) 900-60-90" required>
+          <li class="input__list-item form__contats-item">
+            <label class="input__label" for="tel-id">Телефон:*</label>
+            <input class="input__text form__contats-input" type="tel" name="tel" id="tel-id" placeholder="8 (960) 900-60-90" required>
             <svg width="20px" height="20px">
               <use xlink:href="img/sprite-icons.svg#icon-phone"></use>
             </svg>
@@ -93,26 +93,26 @@
 
         <h2 class="page-main__subtitle layout-positioner">Комментарий</h2>
         <div class="form__textarea-wraper layout-positioner">
-          <textarea placeholder="Расскажите обо всех повадках кота"></textarea>
+          <textarea class="input__textarea input__text" placeholder="Расскажите обо всех повадках кота"></textarea>
         </div>
 
         <h2 class="page-main__subtitle layout-positioner">Дополнительно</h2>
-        <ul class="form__addons layout-positioner">
-          <li>
-            <input class="form__checkbox visually-hidden" type="checkbox" name="sugar" id="sugar-id" checked>
-            <label for="sugar-id">Сахарозаменитель</label>
+        <ul class="input__list form__addons layout-positioner">
+          <li class="input__list-item input__list-item--checkbox">
+            <input class="input__checkbox visually-hidden" type="checkbox" name="sugar" id="sugar-id" checked>
+            <label class="input__label input__label--checkbox" for="sugar-id">Сахарозаменитель</label>
           </li>
-          <li>
-            <input class="form__checkbox visually-hidden" type="checkbox" name="water" id="water-id">
-            <label for="water-id">Питьевая вода</label>
+          <li class="input__list-item input__list-item--checkbox">
+            <input class="input__checkbox visually-hidden" type="checkbox" name="water" id="water-id">
+            <label class="input__label input__label--checkbox" for="water-id">Питьевая вода</label>
           </li>
-          <li>
-            <input class="form__checkbox visually-hidden" type="checkbox" name="milk" id="milk-id">
-            <label for="milk-id">Молоко</label>
+          <li class="input__list-item input__list-item--checkbox">
+            <input class="input__checkbox visually-hidden" type="checkbox" name="milk" id="milk-id">
+            <label class="input__label input__label--checkbox" for="milk-id">Молоко</label>
           </li>
-          <li>
-            <input class="form__checkbox visually-hidden" type="checkbox" name="vitamin" id="vitamin-id">
-            <label for="vitamin-id">Витамины</label>
+          <li class="input__list-item input__list-item--checkbox">
+            <input class="input__checkbox visually-hidden" type="checkbox" name="vitamin" id="vitamin-id">
+            <label class="input__label input__label--checkbox" for="vitamin-id">Витамины</label>
           </li>
         </ul>
 
