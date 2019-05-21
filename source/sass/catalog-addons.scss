@@ -1,0 +1,121 @@
+.catalog-addons__subtitle {
+  margin-bottom: 35px;
+}
+
+.catalog-addons {
+  list-style: none;
+}
+
+.catalog-addons__item {
+  padding-bottom: 18px;
+  border-top: 1px solid $line-catalor-color;
+
+  &:nth-last-child(1) {
+    border-bottom: 1px solid $line-catalor-color;
+  }
+}
+
+.catalog-addons__title {
+  margin-top: 12px;
+  margin-bottom: 12px;
+
+  color: $label-color;
+  font-family: "Oswald", "Arial MT", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+  text-transform: uppercase;
+}
+
+.catalog-addons__attributes {
+  width: 100%;
+  margin-bottom: 14px;
+  line-height: 14px;
+  border-collapse: collapse;
+}
+
+.catalog-addons__price {
+  text-align: right;
+}
+
+@media (min-width: $tablet-width) {
+  .catalog-addons__subtitle {
+    margin-bottom: 81px;
+  }
+
+  .catalog-addons__item {
+    margin-top: -1px;
+    padding: 14px 36px 27px 37px;
+    text-align: justify;
+
+    border: 1px solid $line-catalor-color;
+  }
+
+  .catalog-addons__title {
+    display: inline-block;
+    vertical-align: bottom;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .catalog-addons__attributes {
+    display: inline-block;
+    width: auto;
+
+    vertical-align: bottom;
+    font-size: 16px;
+    line-height: 10px;
+  }
+
+  .catalog-addons__value {
+    padding-right: 45px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .catalog-addons__wrapper {
+    display: flex;
+    justify-content: flex-start;
+    width: 1220px;
+    margin: 0 auto;
+    margin-bottom: 85px;
+  }
+
+  .catalog-addons {
+    width: 895px;
+    margin: 0;
+    margin-right: 80px;
+    padding: 0;
+  }
+
+  .catalog-addons__item {
+    display: flex;
+    min-height: 73px;
+    padding: 15px 0;
+    border-left: none;
+    border-right: none;
+  }
+
+  .catalog-addons__title {
+    margin: 0;
+    margin-right: auto;
+    padding-top: 10px;
+    padding-left: 5px;
+  }
+
+  .catalog-addons__attributes {
+    display: table;
+    width: 284px;
+    margin-right: 40px;
+  }
+
+  .catalog-addons__value {
+    padding-top: 16px;
+    padding-right: 0;
+  }
+
+  .catalog-addons__price {
+    padding-top: 16px;
+    text-align: right;
+  }
+}

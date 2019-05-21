@@ -7,6 +7,10 @@
   border-top: 1px solid $line-catalor-color;
 
   &--to-all {
+    margin-bottom: 28px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid $line-catalor-color;
+
     .catalog-item__wraper {
       flex-direction: column;
       align-items: center;

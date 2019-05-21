@@ -67,6 +67,10 @@
       width: 283px;
       height: 52px;
     }
+
+    &--addons {
+      margin-top: 13px;
+    }
   }
 }
 
@@ -74,5 +78,10 @@
   .button--form {
     width: 568px;
     height: 52px;
+  }
+
+  .button--addons {
+    width: 245px;
+    margin: 0;
   }
 }
