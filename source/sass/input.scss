@@ -5,6 +5,7 @@
 .input__list-item {
   display: flex;
   align-items: baseline;
+
   margin-bottom: 14px;
 }
 
@@ -12,19 +13,24 @@
   flex-shrink: 0;
 
   padding-right: 15px;
+
+  text-transform: uppercase;
+
   color: $label-color;
+
   font-family: "Oswald", "Arial MT", sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 18px;
-  text-transform: uppercase;
 }
 
 .input__text {
   display: inline;
+
   width: 100%;
   height: 45px;
   padding: 15px 14px 10px 14px;
+
   border: 1px solid $input-border-color;
 
   &:hover {
@@ -37,23 +43,27 @@
   }
 
   &::placeholder {
+    text-transform: uppercase;
+
     color: $placeholder-color;
+
     font-family: "Oswald", "Arial MT", sans-serif;
     font-size: 16px;
     font-weight: 400;
     line-height: 18px;
-    text-transform: uppercase;
   }
 }
 
 .input__textarea {
   display: block;
+
   height: 150px;
   padding-right: 10px;
 
-  vertical-align: top;
-  border: 1px solid $input-border-color;
   resize: none;
+  vertical-align: top;
+
+  border: 1px solid $input-border-color;
 }
 
 .input__list-item--radio {
@@ -62,19 +72,22 @@
 
 .input__label--radio {
   position: relative;
+
   padding-left: 45px;
 
   &::before {
     position: absolute;
     top: -5px;
     left: 0;
+
     width: 30px;
     height: 30px;
 
-    background-color: $contrast-color;
-    border-radius: 50%;
-    border: 1px solid $input-radio-color;
     content: "";
+
+    border: 1px solid $input-radio-color;
+    border-radius: 50%;
+    background-color: $contrast-color;
   }
 
   &:hover {
@@ -88,12 +101,14 @@
   position: absolute;
   top: 4px;
   left: 9px;
+
   width: 12px;
   height: 12px;
 
-  background-color: $btn-color;
-  border-radius: 50%;
   content: "";
+
+  border-radius: 50%;
+  background-color: $btn-color;
 }
 
 .input__list-item--checkbox {
@@ -102,18 +117,21 @@
 
 .input__label--checkbox {
   position: relative;
+
   padding-left: 45px;
 
   &::before {
     position: absolute;
     top: -5px;
     left: 0;
+
     width: 30px;
     height: 30px;
 
-    background-color: $contrast-color;
-    border: 1px solid $input-radio-color;
     content: "";
+
+    border: 1px solid $input-radio-color;
+    background-color: $contrast-color;
   }
 
   &:hover {
@@ -127,13 +145,15 @@
   position: absolute;
   top: 0;
   left: 4px;
+
   width: 24px;
   height: 20px;
+
+  content: "";
 
   background-image: url("../img/icon-tick.svg");
   background-repeat: no-repeat;
   background-position: center;
-  content: "";
 }
 
 @media (min-width: $tablet-width) {
@@ -176,6 +196,7 @@
   .input__radio:checked + .input__label--radio::after {
     top: 5px;
     left: 11px;
+
     width: 18px;
     height: 18px;
   }
@@ -202,6 +223,7 @@
   .input__checkbox:checked + .input__label--checkbox::after {
     top: 5px;
     left: 9px;
+
     width: 24px;
     height: 20px;
   }

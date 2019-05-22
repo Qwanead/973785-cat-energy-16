@@ -19,21 +19,24 @@
   margin: 0 auto;
   padding-top: 66px;
 
+  text-align: center;
+
   color: $contrast-color;
+
   font-size: 16px;
   line-height: 20px;
-  text-align: center;
 
   &::before {
     display: block;
+
     width: 55px;
     height: 60px;
     margin: 0 auto;
     margin-bottom: 60px;
 
+    content: "";
 
     background-image: url("../img/icon-gift.svg");
-    content: "";
   }
 }
 
@@ -56,15 +59,20 @@
     position: relative;
     top: 72px;
     left: 392px;
+
     display: inline-block;
+
     padding-top: 0;
+
     text-align: left;
 
     &::before {
       position: absolute;
       top: -6px;
       left: -331px;
+
       display: inline-block;
+
       margin-bottom: 0;
     }
   }
@@ -86,13 +94,18 @@
 
   .gift__content {
     position: static;
+
     display: block;
+
     padding-top: 66px;
+
     text-align: center;
 
     &::before {
       position: static;
+
       display: block;
+
       margin-bottom: 60px;
     }
   }

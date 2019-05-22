@@ -1,8 +1,9 @@
 .program {
   display: block;
+
+  margin-bottom: 20px;
   padding: 20px;
   padding-bottom: 22px;
-  margin-bottom: 20px;
 
   background-color: $background-block-color;
 }
@@ -10,26 +11,31 @@
 
 .program__header {
   position: relative;
+
   margin: 10px 0 0 0;
   padding-left: 70px;
+
+  text-transform: uppercase;
+
   color: $header-color;
 
   font-family: "Oswald", "Arial MT", sans-serif;
   font-size: 24px;
   font-weight: 400;
   line-height: 37.02px;
-  text-transform: uppercase;
 
   &::before {
     position: absolute;
     top: -5px;
     left: 2px;
+
     width: 50px;
     height: 50px;
 
-    background-color: $btn-color;
-    border-radius: 50%;
     content: "";
+
+    border-radius: 50%;
+    background-color: $btn-color;
   }
 
   &--slim {
@@ -37,13 +43,15 @@
       position: absolute;
       top: -8px;
       left: 2px;
+
       width: 50px;
       height: 50px;
+
+      content: "";
 
       background-image: url("../img/icon-cat-slim.svg");
       background-repeat: no-repeat;
       background-position: center;
-      content: "";
     }
   }
 
@@ -52,13 +60,15 @@
       position: absolute;
       top: -12px;
       left: -8px;
+
       width: 68px;
       height: 65px;
+
+      content: "";
 
       background-image: url("../img/icon-cat-pro.svg");
       background-repeat: no-repeat;
       background-position: center;
-      content: "";
     }
   }
 }
@@ -72,17 +82,21 @@
 }
 
 .program__catalog {
-  display: inline-block;
   position: relative;
+
+  display: inline-block;
+
   padding-right: 35px;
 
+  vertical-align: middle;
+  text-transform: uppercase;
+
   color: $header-color;
+
   font-family: "Oswald", "Arial MT", sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 16px;
-  text-transform: uppercase;
-  vertical-align: middle;
 
   &:active {
     color: $program-link-act-color;
@@ -96,22 +110,23 @@
     width: 25px;
     height: 12px;
 
+    content: "";
+
     background-image: url("../img/icon-right-arrow-long.svg");
     background-repeat: no-repeat;
-    content: "";
   }
 }
 
 @media (min-width: $tablet-width) {
   .program {
+    margin-bottom: 30px;
     padding-top: 60px;
     padding-left: 50px;
-    margin-bottom: 30px;
   }
 
   .program__header {
-    padding-left: 0;
     padding-right: 275px;
+    padding-left: 0;
 
     font-size: 36px;
 
@@ -119,6 +134,7 @@
       position: absolute;
       top: 16px;
       left: 396px;
+
       width: 200px;
       height: 200px;
     }
@@ -128,6 +144,7 @@
         position: absolute;
         top: 5px;
         left: 425px;
+
         width: 140px;
         height: 194px;
       }
@@ -138,6 +155,7 @@
         position: absolute;
         top: 61px;
         left: 360px;
+
         width: 268px;
         height: 112px;
       }
@@ -156,6 +174,7 @@
 
   .program__catalog {
     display: inline-block;
+
     max-width: 400px;
     margin-top: 12px;
     margin-bottom: 45px;
@@ -181,6 +200,7 @@
       position: absolute;
       top: -28px;
       left: 2px;
+
       width: 100px;
       height: 100px;
     }
@@ -190,6 +210,7 @@
         position: absolute;
         top: -35px;
         left: 15px;
+
         width: 70px;
         height: 97px;
       }
@@ -200,6 +221,7 @@
         position: absolute;
         top: -5px;
         left: -15px;
+
         width: 134px;
         height: 56px;
       }

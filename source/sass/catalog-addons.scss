@@ -8,6 +8,7 @@
 
 .catalog-addons__item {
   padding-bottom: 18px;
+
   border-top: 1px solid $line-catalor-color;
 
   &:nth-last-child(1) {
@@ -19,19 +20,23 @@
   margin-top: 12px;
   margin-bottom: 12px;
 
+  text-transform: uppercase;
+
   color: $label-color;
+
   font-family: "Oswald", "Arial MT", sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 16px;
-  text-transform: uppercase;
 }
 
 .catalog-addons__attributes {
   width: 100%;
   margin-bottom: 14px;
-  line-height: 14px;
+
   border-collapse: collapse;
+
+  line-height: 14px;
 }
 
 .catalog-addons__price {
@@ -62,6 +67,7 @@
 
   .catalog-addons__attributes {
     align-self: flex-end;
+
     width: auto;
 
     font-size: 16px;
@@ -77,6 +83,7 @@
   .catalog-addons__wrapper {
     display: flex;
     justify-content: flex-start;
+
     width: 1220px;
     margin: 0 auto;
     margin-bottom: 85px;
@@ -96,10 +103,12 @@
   .catalog-addons__item {
     display: flex;
     justify-content: space-between;
+
     min-height: 73px;
     padding: 15px 0;
-    border-left: none;
+
     border-right: none;
+    border-left: none;
   }
 
   .catalog-addons__title {
@@ -121,6 +130,7 @@
 
   .catalog-addons__price {
     padding-top: 16px;
+
     text-align: right;
   }
 }

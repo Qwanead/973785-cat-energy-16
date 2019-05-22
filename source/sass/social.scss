@@ -1,21 +1,25 @@
 .social {
-  @include list-reset;
-
-  width: 100%;
   display: flex;
   justify-content: center;
+
+  width: 100%;
   padding-top: 25px;
   padding-bottom: 15px;
 
   border-bottom: 1px solid $line-program-color;
+
+  @include list-reset;
 }
 
 .social__link {
   display: block;
+
   width: 22px;
   height: 22px;
-  font-size: 0;
+
   color: $icon-color;
+
+  font-size: 0;
 
   svg {
     width: 22px;
@@ -28,8 +32,8 @@
   }
 
   &:active {
-    color: $btn-color;
     opacity: 0.3;
+    color: $btn-color;
   }
 
   &--facebook {
@@ -52,15 +56,16 @@
 
 @media (min-width: $tablet-width) {
   .social {
-    flex: 0 0 360px;
-    border-bottom: none;
     align-items: center;
+    flex: 0 0 360px;
+
+    border-bottom: none;
   }
 
   .social__link {
-    margin-top: -20px;
     width: 30px;
     height: 30px;
+    margin-top: -20px;
 
     svg {
       width: 30px;

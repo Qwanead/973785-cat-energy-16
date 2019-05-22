@@ -4,6 +4,7 @@ body {
   padding: 0;
 
   color: $content-text-color;
+
   font-family: "Arial MT", sans-serif;
   font-size: 14px;
   font-weight: 400;
@@ -21,8 +22,9 @@ html {
 }
 
 a {
-  color: #000000;
   text-decoration: none;
+
+  color: #000000;
 }
 
 img {

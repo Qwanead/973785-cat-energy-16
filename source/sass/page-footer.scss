@@ -5,6 +5,7 @@
 .page-footer__contacts {
   display: flex;
   justify-content: space-between;
+
   padding-top: 15px;
   padding-bottom: 10px;
 
@@ -15,11 +16,14 @@
 
 .page-footer__contacts-title {
   margin-right: 15px;
+
+  text-transform: uppercase;
+
   color: $header-color;
+
   font-family: "Oswald", "Arial MT", sans-serif;
   font-size: 16px;
   line-height: 20px;
-  text-transform: uppercase;
 }
 
 .page-footer__contacts-address {
@@ -34,14 +38,16 @@
 
 .page-footer__map {
   display: block;
+
   width: 100%;
   padding: 0;
 }
 
 .page-footer__wraper {
   display: flex;
-  flex-direction: column;
   align-items: center;
+  flex-direction: column;
+
   padding-top: 25px;
   padding-bottom: 20px;
 }
@@ -57,6 +63,7 @@
   padding-bottom: 25px;
 
   text-align: center;
+
   border-bottom: 1px solid $line-program-color;
 
   &:hover,
@@ -73,10 +80,12 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+
   width: 100%;
   padding-top: 15px;
 
   color: $content-text-color;
+
   font-size: 16px;
   line-height: 16px;
 
@@ -98,6 +107,7 @@
 
 .page-footer__copyright-logo {
   margin-right: -5px;
+
   color: $icon-color;
 }
 
@@ -105,8 +115,8 @@
   .page-footer__contacts {
     width: 630px;
     padding-top: 45px;
-    padding-bottom: 40px;
     padding-right: 0;
+    padding-bottom: 40px;
     padding-left: 0;
   }
 
@@ -119,11 +129,13 @@
 
   .page-footer__contacts-address {
     width: 160px;
+
     text-align: right;
   }
 
   .page-footer__contacts-city {
     display: block;
+
     padding-top: 24px;
   }
 
@@ -132,9 +144,10 @@
   }
 
   .page-footer__wraper {
+    align-items: stretch;
     flex-direction: row;
     justify-content: center;
-    align-items: stretch;
+
     min-height: 150px;
     padding-bottom: 5px;
   }
@@ -143,12 +156,14 @@
     padding-top: 40px;
 
     text-align: left;
+
     border-bottom: none;
   }
 
   .page-footer__copyright {
-    justify-content: flex-end;
     align-items: flex-start;
+    justify-content: flex-end;
+
     padding-top: 25px;
   }
 
@@ -171,12 +186,13 @@
 
   .page-footer__contacts {
     position: absolute;
-    width: 570px;
-    height: 201px;
     top: 92px;
     left: 110px;
-    padding-left: 80px;
+
+    width: 570px;
+    height: 201px;
     padding-right: 80px;
+    padding-left: 80px;
 
     background-color: $contrast-color;
   }
