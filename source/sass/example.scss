@@ -1,0 +1,143 @@
+.example {
+  margin-top: 20px;
+  background-color: $background-block-color;
+}
+
+.example__header {
+  margin: 0;
+  margin-top: 17px;
+  color: $header-color;
+  font-family: "Oswald", "Arial MT", sans-serif;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 60px;
+}
+
+.example__content-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.example__content {
+  margin-top: 23px;
+  margin-bottom: 0;
+  padding-right: 14px;
+}
+
+.example__stats {
+  display: flex;
+  flex-direction: column;
+  margin-top: 24px;
+}
+
+.example__stats-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.example__stats-block {
+  position: relative;
+  width: 124px;
+  min-height: 56px;
+  margin: 0;
+  padding-top: 14px;
+  font-family: "Oswald", "Arial MT", sans-serif;
+  font-size: 24px;
+  line-height: 24px;
+  text-transform: uppercase;
+
+  text-align: center;
+  border-radius: 3px;
+  border: 1px solid $input-radio-color;
+
+  &::after {
+    position: absolute;
+    bottom: -17px;
+    left: 16px;
+    width: 87px;
+    padding: 0 5px;
+    color: #444444;
+    font-family: "Arial MT", sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 12px;
+    text-align: center;
+    text-transform: none;
+    content: "";
+    background-color: $background-block-color;
+  }
+
+  &--weight {
+    &::after {
+      content: "снижение веса";
+    }
+  }
+
+  &--time {
+    &::after {
+      content: "затрачено времени";
+    }
+  }
+}
+
+.example__stats-cost {
+  margin: 0;
+  margin-top: 35px;
+  color: $header-color;
+  font-family: "Oswald", "Arial MT", sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.example__beforeafter {
+  width: 320px;
+  margin: 34px auto;
+}
+
+.example__image {
+  width: 320px;
+  display: block;
+  margin: 0 auto;
+}
+
+.example__toggle-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 200px;
+  margin: 0 auto;
+  margin-top: 32px;
+}
+
+.example__toggle-legend {
+  display: inline-block;
+  margin: 0;
+
+  color: $header-color;
+  font-family: "Oswald", "Arial MT", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.example__toggle-scale {
+  display: inline-block;
+  position: relative;
+  padding: 3px 6px 3px 6px;
+
+  width: 84px;
+  height: 14px;
+  border-radius: 6px;
+  border: 1px solid $input-radio-color;
+  background-color: $contrast-color;
+}
+
+.example__toggle-control {
+  position: absolute;
+  width: calc(60% - 12px);
+  height: 6px;
+  border-radius: 3px;
+  background-color: $btn-color;
+}

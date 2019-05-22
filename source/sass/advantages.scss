@@ -1,5 +1,5 @@
 .advantages {
-  margin-top: -15px;
+  margin-top: -13px;
 }
 
 .adbvantages__header {
@@ -21,11 +21,12 @@
 .advantages__item {
   position: relative;
   padding-left: 80px;
-  margin-bottom: 25px;
+  margin-bottom: 26px;
 
 
   &::before {
     position: absolute;
+    top: -2px;
     width: 60px;
     height: 60px;
     left: 0;

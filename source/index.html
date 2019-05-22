@@ -91,50 +91,99 @@
           </ul>
         </section>
       </div>
+
+      <section class="example">
+        <div class="layout-positioner">
+          <h2 class="example__header">Живой пример</h2>
+
+          <div class="example__content-wrapper">
+              <p class="example__content">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день. </p>
+
+              <div class="example__stats">
+                <div class="example__stats-wrapper">
+                  <p class="example__stats-block example__stats-block--weight">5 кг</p>
+                  <p class="example__stats-block example__stats-block--time">60 дней</p>
+                </div>
+
+                <p class="example__stats-cost">
+                  Затраты на питание: <span class="example__stat-price">15 000 руб.</span>
+                </p>
+              </div>
+          </div>
+        </div>
+
+        <div class="example__beforeafter">
+          <picture>
+            <source type="image/webp" media="(min-width: 1300px)" srcset="img/before-desktop@1x.webp 1x, img/before-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/before-tablet@1x.webp 1x, img/before-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/before-mobile@1x.webp 1x, img/before-mobile@2x.webp 2x">
+            <source media="(min-width: 1300px)" srcset="img/before-desktop@1x.png 1x, img/before-desktop@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="img/before-tablet@1x.jpg 1x, img/before-tablet@2x.jpg 2x">
+            <img class="example__image" src="img/before-mobile@1x.png" srcset="img/before-mobile@2x.png 2x" width="311" height="232" alt="Было/Стало">
+          </picture>
+
+          <div class="example__toggle-wrapper">
+            <p class="example__toggle-legend">Было</p>
+            <div class="example__toggle-scale">
+              <div class="example__toggle-control"></div>
+            </div>
+            <p class="example__toggle-legend">Стало</p>
+          </div>
+        </div>
+      </section>
     </main>
 
     <footer class="page-footer">
-      <div class="page-footer__wraper layout-positioner">
-        <a class="page-footer__logo" href="index.html">
-          <img src="img/logo-footer.svg" width="128" height="24" alt="Cat energy">
-        </a>
+        <div class="page-footer__map-wraper">
+          <section class="page-footer__contacts page-footer__contacts--index layout-positioner">
+            <p class="page-footer__contacts-title">Приглашаем к&nbsp;сотрудничеству дилеров!</p>
+            <p class="page-footer__contacts-address">ул. Большая Конюшенная, д. 19/8 <span class="page-footer__contacts-city">Санкт-Петербург</span></p>
+          </section>
 
-        <ul class="social">
-          <li class="social__item">
-            <a class="social__link" href="https://vk.com/htmlacademy">
-              Мы в Вконтакте
-              <svg width="30px" height="16px">
-                <use xlink:href="img/sprite-icons.svg#icon-vk"></use>
-              </svg>
-            </a>
-          </li>
+          <iframe class="page-footer__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.593530267094!2d30.320837316108992!3d59.938886669040656!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTnCsDU2JzIwLjAiTiAzMMKwMTknMjIuOSJF!5e0!3m2!1sru!2sru!4v1558330710990!5m2!1sru!2sru" width="320px" height="360px" frameborder="0" style="border: 0;" allowfullscreen></iframe>
+        </div>
 
-          <li class="social__item">
-            <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">
-              Мы в Инстаграме
-              <svg width="23px" height="23px">
-                <use xlink:href="img/sprite-icons.svg#icon-insta"></use>
-              </svg>
-            </a>
-          </li>
+        <div class="page-footer__wraper layout-positioner">
+          <a class="page-footer__logo" href="index.html">
+            <img src="img/logo-footer.svg" width="128" height="24" alt="Cat energy">
+          </a>
 
-          <li class="social__item">
-            <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">
-              Мы в Фейсбуке
-              <svg width="14px" height="28px">
-                <use xlink:href="img/sprite-icons.svg#icon-fb"></use>
-              </svg>
-            </a>
-          </li>
-        </ul>
+          <ul class="social">
+            <li class="social__item">
+              <a class="social__link" href="https://vk.com/htmlacademy">
+                Мы в Вконтакте
+                <svg width="30px" height="16px">
+                  <use xlink:href="img/sprite-icons.svg#icon-vk"></use>
+                </svg>
+              </a>
+            </li>
 
-        <a class="page-footer__copyright" href="https://htmlacademy.ru/intensive/adaptive">
-          <p class="page-footer__copyright-title">HTML Academy</p>
-          <svg class="page-footer__copyright-logo" width="40" height="40">
-            <use xlink:href="img/sprite-icons.svg#htmlacademy"></use>
-          </svg>
-        </a>
-      </div>
-    </footer>
+            <li class="social__item">
+              <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">
+                Мы в Инстаграме
+                <svg width="23px" height="23px">
+                  <use xlink:href="img/sprite-icons.svg#icon-insta"></use>
+                </svg>
+              </a>
+            </li>
+
+            <li class="social__item">
+              <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">
+                Мы в Фейсбуке
+                <svg width="14px" height="28px">
+                  <use xlink:href="img/sprite-icons.svg#icon-fb"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+
+          <a class="page-footer__copyright" href="https://htmlacademy.ru/intensive/adaptive">
+            <p class="page-footer__copyright-title">HTML Academy</p>
+            <svg class="page-footer__copyright-logo" width="40" height="40">
+              <use xlink:href="img/sprite-icons.svg#htmlacademy"></use>
+            </svg>
+          </a>
+        </div>
+      </footer>
   </body>
 </html>

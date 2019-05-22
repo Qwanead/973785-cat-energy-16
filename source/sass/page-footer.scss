@@ -7,6 +7,10 @@
   justify-content: space-between;
   padding-top: 15px;
   padding-bottom: 10px;
+
+  &--index {
+    background-color: $contrast-color;
+  }
 }
 
 .page-footer__contacts-title {
