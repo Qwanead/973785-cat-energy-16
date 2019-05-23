@@ -1,8 +1,4 @@
-.catalog-addons__subtitle {
-  margin-bottom: 35px;
-}
-
-.catalog-addons {
+.catalog-addons__list {
   list-style: none;
 }
 
@@ -44,10 +40,6 @@
 }
 
 @media (min-width: $tablet-width) {
-  .catalog-addons__subtitle {
-    margin-bottom: 81px;
-  }
-
   .catalog-addons__item {
     margin-top: -1px;
     padding: 14px 36px 27px 37px;
@@ -80,7 +72,7 @@
 }
 
 @media (min-width: $desktop-width) {
-  .catalog-addons__wrapper {
+  .catalog-addons {
     display: flex;
     justify-content: flex-start;
 
@@ -89,7 +81,7 @@
     margin-bottom: 85px;
   }
 
-  .catalog-addons {
+  .catalog-addons__list {
     width: 895px;
     margin: 0;
     margin-right: 80px;

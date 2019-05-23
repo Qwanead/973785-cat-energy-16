@@ -71,6 +71,10 @@
       right: -25px;
     }
   }
+
+  &--catalog-addons {
+    margin-bottom: 35px;
+  }
 }
 
 .page-main__catalog {
@@ -128,6 +132,10 @@
 
       border-right: 41px solid $contrast-color;
       background-color: $btn-color;
+    }
+
+    &--catalog-addons {
+      margin-bottom: 81px;
     }
   }
 
