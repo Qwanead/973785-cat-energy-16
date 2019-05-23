@@ -157,13 +157,14 @@
 }
 
 @media (min-width: $desktop-width) {
+  .advantages {
+    margin-top: 67px;
+    margin-bottom: 156px;
+  }
+
   .advantages__list {
     flex-wrap: nowrap;
 
     width: auto;
-  }
-
-  .advantages {
-    margin-top: 65px;
   }
 }

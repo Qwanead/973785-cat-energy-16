@@ -93,10 +93,11 @@
       </div>
 
       <section class="example">
-        <div class="layout-positioner">
-          <h2 class="example__header">Живой пример</h2>
+        <div class="example__wrapper">
+          <div class="example__header-wrapper layout-positioner">
+            <h2 class="example__header">Живой пример</h2>
 
-          <div class="example__content-wrapper">
+            <div class="example__content-wrapper">
               <p class="example__content">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день. </p>
 
               <div class="example__stats">
@@ -109,26 +110,27 @@
                   Затраты на питание: <span class="example__stat-price">15 000 руб.</span>
                 </p>
               </div>
+            </div>
           </div>
-        </div>
 
-        <div class="example__beforeafter-wrapper">
-          <div class="example__beforeafter">
-            <picture>
-              <source type="image/webp" media="(min-width: 1300px)" srcset="img/before-desktop@1x.webp 1x, img/before-desktop@2x.webp 2x">
-              <source type="image/webp" media="(min-width: 768px)" srcset="img/before-tablet@1x.webp 1x, img/before-tablet@2x.webp 2x">
-              <source type="image/webp" srcset="img/before-mobile@1x.webp 1x, img/before-mobile@2x.webp 2x">
-              <source media="(min-width: 1300px)" srcset="img/before-desktop@1x.png 1x, img/before-desktop@2x.png 2x">
-              <source media="(min-width: 768px)" srcset="img/before-tablet@1x.jpg 1x, img/before-tablet@2x.jpg 2x">
-              <img class="example__image" src="img/before-mobile@1x.png" srcset="img/before-mobile@2x.png 2x" width="311" height="232" alt="Было/Стало">
-            </picture>
+          <div class="example__beforeafter-wrapper">
+            <div class="example__beforeafter">
+              <picture>
+                <source type="image/webp" media="(min-width: 1300px)" srcset="img/before-desktop@1x.webp 1x, img/before-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/before-tablet@1x.webp 1x, img/before-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/before-mobile@1x.webp 1x, img/before-mobile@2x.webp 2x">
+                <source media="(min-width: 1300px)" srcset="img/before-desktop@1x.png 1x, img/before-desktop@2x.png 2x">
+                <source media="(min-width: 768px)" srcset="img/before-tablet@1x.jpg 1x, img/before-tablet@2x.jpg 2x">
+                <img class="example__image" src="img/before-mobile@1x.png" srcset="img/before-mobile@2x.png 2x" width="311" height="232" alt="Было/Стало">
+              </picture>
 
-            <div class="example__toggle-wrapper">
-              <p class="example__toggle-legend">Было</p>
-              <div class="example__toggle-scale">
-                <div class="example__toggle-control"></div>
+              <div class="example__toggle-wrapper">
+                <p class="example__toggle-legend">Было</p>
+                <div class="example__toggle-scale">
+                  <div class="example__toggle-control"></div>
+                </div>
+                <p class="example__toggle-legend">Стало</p>
               </div>
-              <p class="example__toggle-legend">Стало</p>
             </div>
           </div>
         </div>

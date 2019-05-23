@@ -1,4 +1,4 @@
-.example {
+.example__wrapper {
   margin-top: 20px;
 
   background-color: $background-block-color;
@@ -7,6 +7,7 @@
 .example__header {
   margin: 0;
   margin-top: 17px;
+  padding-top: 18px;
 
   color: $header-color;
 
@@ -108,6 +109,8 @@
 .example__beforeafter {
   width: 320px;
   margin: 34px auto;
+  margin-bottom: 0;
+  padding-bottom: 34px;
 }
 
 .example__image {
@@ -166,7 +169,7 @@
 }
 
 @media (min-width: $tablet-width) {
-  .example {
+  .example__wrapper {
     margin-top: -4px;
 
     border-top: 1px solid $line-catalor-color;
@@ -175,6 +178,7 @@
 
   .example__header {
     margin-top: 43px;
+    padding-top: 0;
 
     font-size: 60px;
     line-height: 60px;
@@ -257,6 +261,7 @@
 
     width: $tablet-width;
     margin-bottom: 0;
+    padding-bottom: 0;
   }
 
   .example__image {
@@ -275,7 +280,6 @@
 
   .example__toggle-legend {
     position: relative;
-    // border-bottom: 1px dashed $toggle-scale-box-shadow-act;
 
     font-size: 20px;
     line-height: 20px;
@@ -339,5 +343,94 @@
         left: 11px;
       }
     }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .example {
+    padding-top: 5px;
+
+    background-color: $background-block-color;
+  }
+
+  .example__wrapper {
+    position: relative;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+
+    width: $desktop-width;
+    margin-top: 0;
+    margin-right: auto;
+    margin-left: auto;
+
+    border: none;
+  }
+
+  .example__header-wrapper {
+    width: 100%;
+    padding: 0;
+
+    background-color: $background-block-color;
+  }
+
+  .example__header {
+    position: absolute;
+    top: -165px;
+    left: 40px;
+
+    margin-top: 24px;
+  }
+
+  .example__content-wrapper {
+    padding-top: 65px;
+    padding-right: 100px;
+    padding-left: 40px;
+  }
+
+  .example__content {
+    margin: 0;
+  }
+
+  .example__stats-wrapper {
+    margin-top: 44px;
+  }
+
+  .example__stats {
+    flex-direction: column;
+  }
+
+  .example__stats-block {
+    &::after {
+      background-color: $background-block-color;
+    }
+  }
+
+  .example__stats-cost {
+    margin-top: 47px;
+
+    text-align: left;
+  }
+
+  .example__stat-price {
+    display: inline-block;
+
+    margin-left: 59px;
+  }
+
+  .example__beforeafter-wrapper {
+    width: 710px;
+    margin-top: 0;
+    padding-top: 329px;
+  }
+
+  .example__image {
+    bottom: 61px;
+    left: 20px;
+  }
+
+  .example__toggle-scale {
+    width: 428px;
   }
 }
