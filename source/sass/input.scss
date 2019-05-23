@@ -31,7 +31,15 @@
   height: 45px;
   padding: 15px 14px 10px 14px;
 
+  text-transform: uppercase;
+
+  color: $placeholder-color;
   border: 1px solid $input-border-color;
+
+  font-family: "Oswald", "Arial MT", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
 
   &:hover {
     border: 1px solid $input-radio-color;
@@ -172,6 +180,9 @@
   .input__text {
     height: 52px;
     padding: 18px 20px 13px 20px;
+
+    font-size: 20px;
+    line-height: 20px;
 
     &::placeholder {
       font-size: 20px;
