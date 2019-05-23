@@ -3,15 +3,19 @@
 }
 
 .page-footer__contacts {
+  background-color: $background-block-color;
+
+  &--index {
+    background-color: $contrast-color;
+  }
+}
+
+.page-footer__contacts-wrapper {
   display: flex;
   justify-content: space-between;
 
   padding-top: 15px;
   padding-bottom: 10px;
-
-  &--index {
-    background-color: $contrast-color;
-  }
 }
 
 .page-footer__contacts-title {
@@ -112,7 +116,7 @@
 }
 
 @media (min-width: $tablet-width) {
-  .page-footer__contacts {
+  .page-footer__contacts-wrapper {
     width: 630px;
     padding-top: 45px;
     padding-right: 0;
@@ -184,7 +188,7 @@
     position: relative;
   }
 
-  .page-footer__contacts {
+  .page-footer__contacts-wrapper {
     position: absolute;
     top: 92px;
     left: 110px;

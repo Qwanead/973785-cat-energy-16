@@ -3,12 +3,14 @@
   justify-content: center;
 
   width: 100%;
+  margin: 0;
+  padding: 0;
   padding-top: 25px;
   padding-bottom: 15px;
 
-  border-bottom: 1px solid $line-program-color;
+  list-style: none;
 
-  @include list-reset;
+  border-bottom: 1px solid $line-program-color;
 }
 
 .social__link {

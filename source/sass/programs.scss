@@ -1,5 +1,8 @@
 .programs__list {
-  @include list-reset;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
 }
 
 @media (min-width: $desktop-width) {
