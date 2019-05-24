@@ -1,16 +1,26 @@
 .layout-positioner {
   width: 320px;
   margin: 0 auto;
-  padding-left: 20px;
   padding-right: 20px;
+  padding-left: 20px;
+
+  &--catalog {
+    padding-right: 0;
+    padding-left: 0;
+  }
 }
 
 @media (min-width: $tablet-width) {
   .layout-positioner {
     width: $tablet-width;
     margin: 0 auto;
-    padding-left: 30px;
     padding-right: 30px;
+    padding-left: 30px;
+
+    &--catalog {
+      padding-right: 30px;
+      padding-left: 30px;
+    }
   }
 }
 
@@ -18,7 +28,12 @@
   .layout-positioner {
     width: $desktop-width;
     margin: 0 auto;
-    padding-left: 40px;
     padding-right: 40px;
+    padding-left: 40px;
+
+    &--catalog {
+      padding-right: 40px;
+      padding-left: 40px;
+    }
   }
 }

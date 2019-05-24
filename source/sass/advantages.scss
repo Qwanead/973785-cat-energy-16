@@ -1,10 +1,12 @@
 .advantages {
-  margin-top: -15px;
+  margin-top: -13px;
 }
 
-.adbvantages__header {
+.advantages__header {
   padding-top: 0;
+
   color: $header-color;
+
   font-family: "Oswald", "Arial MT", sans-serif;
   font-size: 36px;
   font-weight: 400;
@@ -12,30 +14,37 @@
 }
 
 .advantages__list {
-  @include list-reset;
-
   display: flex;
   flex-direction: column;
+
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
 }
 
 .advantages__item {
   position: relative;
+
+  margin-bottom: 26px;
   padding-left: 80px;
-  margin-bottom: 25px;
 
 
   &::before {
     position: absolute;
+    top: -2px;
+    left: 0;
+
     width: 60px;
     height: 60px;
-    left: 0;
+
+    content: "";
 
     background-color: $btn-color;
     background-image: none;
-    background-position: center;
     background-repeat: no-repeat;
+    background-position: center;
     background-size: 50px 50px;
-    content: "";
   }
 
   &--part {
@@ -88,7 +97,7 @@
     margin-top: -5px;
   }
 
-  .adbvantages__header {
+  .advantages__header {
     margin-bottom: -5px;
 
     font-size: 60px;
@@ -96,21 +105,25 @@
 
   .advantages__list {
     display: flex;
+    align-items: flex-start;
     flex-direction: row;
     flex-wrap: wrap;
-    align-items: flex-start;
     justify-content: space-between;
+
     width: 630px;
     padding-top: 50px;
+
     counter-reset: list1;
   }
 
   .advantages__item {
     display: inline-block;
     flex-shrink: 0;
+
     width: 246px;
     min-height: 272px;
     margin-top: 20px;
+    margin-bottom: 25px;
     padding: 0;
     padding-top: 120px;
 
@@ -118,35 +131,40 @@
 
     &::before {
       position: absolute;
+      top: 7px;
+
       width: 80px;
       height: 80px;
-      top: 7px;
     }
 
     &::after {
       position: absolute;
+      z-index: -1;
       top: -30px;
       right: 5px;
-      z-index: -1;
+
+      content: counter(list1);
+      counter-increment: list1;
 
       color: $background-block-color;
+
       font-family: "Oswald", "Arial MT", sans-serif;
       font-size: 281px;
       font-weight: 400;
       line-height: 281.07px;
-      counter-increment: list1;
-      content: counter(list1);
     }
   }
 }
 
 @media (min-width: $desktop-width) {
-  .advantages__list {
-    flex-wrap: nowrap;
-    width: auto;
+  .advantages {
+    margin-top: 67px;
+    margin-bottom: 156px;
   }
 
-  .advantages {
-    margin-top: 65px;
+  .advantages__list {
+    flex-wrap: nowrap;
+
+    width: auto;
   }
 }

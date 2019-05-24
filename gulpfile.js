@@ -13,6 +13,9 @@ var del = require("del");
 var imagemin = require("gulp-imagemin");
 var svgstore = require("gulp-svgstore");
 var webp = require("gulp-webp");
+var htmlmin = require('gulp-htmlmin');
+var uglify = require('gulp-uglify');
+var pipeline = require('readable-stream').pipeline;
 
 gulp.task("css", function () {
   return gulp.src("source/sass/style.scss")
@@ -31,12 +34,16 @@ gulp.task("css", function () {
 
 gulp.task("html", function () {
 return gulp.src("source/*.html")
+  .pipe(htmlmin({ collapseWhitespace: true }))
   .pipe(gulp.dest("build"));
 });
 
 gulp.task("js", function () {
-return gulp.src("source/js/*.js")
-  .pipe(gulp.dest("build/js"));
+  return pipeline(
+    gulp.src("source/js/*.js"),
+    uglify(),
+    gulp.dest("build/js")
+  );
 });
 
 gulp.task("copy", function () {
@@ -75,7 +82,9 @@ gulp.task("sprite", function () {
     "source/img/icon-vk.svg",
     "source/img/icon-insta.svg",
     "source/img/icon-fb.svg",
-    "source/img/htmlacademy.svg"
+    "source/img/htmlacademy.svg",
+    "source/img/icon-phone.svg",
+    "source/img/icon-mail.svg"
   ])
     .pipe(svgstore({
       inlineSvg: true
@@ -93,7 +102,7 @@ gulp.task("server", function () {
     ui: false
   });
 
-  gulp.watch("build/sass/**/*.{scss,sass}", gulp.series("css"));
+  gulp.watch("source/sass/**/*.{scss,sass}", gulp.series("css"));
   gulp.watch("source/*.html").on("change", gulp.series("html", "refresh"));
   gulp.watch("source/js/*.js").on("change", gulp.series("js", "refresh"));
 });

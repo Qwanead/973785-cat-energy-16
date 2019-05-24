@@ -1,8 +1,12 @@
 .slogan {
+  display: flex;
+}
+
+.slogan-wrapper {
   width: 320px;
   margin: 0 auto;
+  margin-bottom: 23px;
   padding: 0 20px;
-  margin-bottom: 20px;
 
   background-image: url("../img/index-background-mobile@1x.jpg");
   background-repeat: no-repeat;
@@ -15,35 +19,41 @@
 }
 
 .slogan__header {
+  margin-top: 27px;
   margin-bottom: 25px;
 
+  text-align: center;
+
   color: $contrast-color;
+
   font-family: "Oswald", "Arial MT", sans-serif;
   font-size: 36px;
   font-weight: 400;
   line-height: 36px;
-  text-align: center;
 }
 
 .slogan__content {
-  margin-bottom: 25px;
+  margin-bottom: 28px;
+
+  text-align: center;
+  text-transform: uppercase;
 
   color: $contrast-color;
+
   font-family: "Oswald", "Arial MT", sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 14px;
-  text-transform: uppercase;
-  text-align: center;
 }
 
 @media (min-width: $tablet-width) {
-  .slogan {
+  .slogan-wrapper {
     position: relative;
+
     width: 530px;
     min-height: 520px;
-    padding: 0;
     margin-bottom: 320px;
+    padding: 0;
 
     background-image: none;
   }
@@ -51,30 +61,35 @@
   .slogan__header {
     margin-top: 30px;
     padding: 0;
+
+    text-align: left;
+
     color: $header-color;
+
     font-size: 60px;
     font-weight: 400;
     line-height: 60px;
-
-    text-align: left;
   }
 
   .slogan__content {
     margin-top: 40px;
     margin-bottom: 50px;
 
+    text-align: left;
+
     color: $header-color;
+
     font-size: 20px;
     font-weight: 400;
     line-height: 20px;
-    text-align: left;
   }
 
   .slogan__image {
     position: absolute;
+    z-index: -1;
     top: 230px;
     left: -90px;
-    z-index: -1;
+
     min-width: 709px;
     height: 609px;
   }
@@ -83,27 +98,13 @@
 @media (min-width: $desktop-width) {
   .slogan {
     position: relative;
+  }
+
+  .slogan-wrapper {
     left: -265px;
+
     min-height: 635px;
     margin-bottom: 5px;
-
-    &::before {
-      content: "";
-      position: absolute;
-      left: 530px;
-      top: -135px;
-      z-index: -2;
-      width: 720px;
-      height: 696px;
-
-      background-color: $background-slogan;
-      background-image: url("../img/index-background-desktop@1x.jpg");
-
-      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-        background-image: url("../img/index-background-desktop@2x.jpg");
-        background-size: cover;
-      }
-    }
   }
 
   .slogan__header {
@@ -121,7 +122,9 @@
   .slogan__image {
     top: 5px;
     left: 370px;
+
     overflow: visible;
+
     min-width: 552px;
     height: 499px;
   }

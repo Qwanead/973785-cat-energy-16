@@ -5,6 +5,8 @@
     <title>HTML Academy: Кэт энерджи</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="format-detection" content="telephone=no">
+    <link rel="preload" href="/fonts/oswaldregular.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="/fonts/oswaldmedium.woff2" as="font" crossorigin="anonymous">
     <link href="css/style.min.css" rel="stylesheet">
     <script>
       // Picture element HTML5 shiv
@@ -41,6 +43,8 @@
       <div class="layout-positioner">
         <h1 class="page-main__header">Каталог продукции</h1>
         <h2 class="visually-hidden">Основная продукция:</h2>
+      </div>
+      <div class="layout-positioner layout-positioner--catalog">
 
         <ul class="page-main__catalog">
           <li class="catalog-item" id="pro">
@@ -73,7 +77,7 @@
                 </picture>
               </a>
             </div>
-            <a class="button button--catalog" href="#">Заказать</a>
+            <a class="button button--catalog" href="form.html">Заказать</a>
           </li>
 
           <li class="catalog-item">
@@ -106,7 +110,7 @@
                 </picture>
               </a>
             </div>
-            <a class="button button--catalog" href="#">Заказать</a>
+            <a class="button button--catalog" href="form.html">Заказать</a>
           </li>
 
           <li class="catalog-item">
@@ -139,7 +143,7 @@
                 </picture>
               </a>
             </div>
-            <a class="button button--catalog" href="#">Заказать</a>
+            <a class="button button--catalog" href="form.html">Заказать</a>
           </li>
 
           <li class="catalog-item">
@@ -172,7 +176,7 @@
                 </picture>
               </a>
             </div>
-            <a class="button button--catalog" href="#">Заказать</a>
+            <a class="button button--catalog" href="form.html">Заказать</a>
           </li>
 
           <li class="catalog-item" id="slim">
@@ -205,7 +209,7 @@
                 </picture>
               </a>
             </div>
-            <a class="button button--catalog" href="#">Заказать</a>
+            <a class="button button--catalog" href="form.html">Заказать</a>
           </li>
 
           <li class="catalog-item">
@@ -238,7 +242,7 @@
                 </picture>
               </a>
             </div>
-            <a class="button button--catalog" href="#">Заказать</a>
+            <a class="button button--catalog" href="form.html">Заказать</a>
           </li>
 
           <li class="catalog-item">
@@ -271,7 +275,7 @@
                 </picture>
               </a>
             </div>
-            <a class="button button--catalog" href="#">Заказать</a>
+            <a class="button button--catalog" href="form.html">Заказать</a>
           </li>
 
           <li class="catalog-item catalog-item--to-all">
@@ -289,9 +293,82 @@
           </li>
         </ul>
       </div>
+
+      <h2 class="page-main__subtitle page-main__subtitle--catalog-addons layout-positioner">Дополнительные товары</h2>
+      <div class="catalog-addons">
+        <ul class="catalog-addons__list layout-positioner">
+          <li class="catalog-addons__item">
+            <div class="catalog-addons__item-wrapper">
+              <h3 class="catalog-addons__title">Сахарозаменитель</h3>
+              <table class="catalog-addons__attributes">
+                <tr>
+                  <td class="catalog-addons__value">1 упаковка (100 г)</td>
+                  <td class="catalog-addons__price">200 Р.</td>
+                </tr>
+              </table>
+            </div>
+            <a class="button button--catalog button--addons" href="form.html">Заказать</a>
+          </li>
+
+          <li class="catalog-addons__item">
+            <div class="catalog-addons__item-wrapper">
+              <h3 class="catalog-addons__title">Питьевая вода</h3>
+              <table class="catalog-addons__attributes">
+                <tr>
+                  <td class="catalog-addons__value">5 литров</td>
+                  <td class="catalog-addons__price">50 Р.</td>
+                </tr>
+              </table>
+            </div>
+            <a class="button button--catalog button--addons" href="form.html">Заказать</a>
+          </li>
+
+          <li class="catalog-addons__item">
+            <div class="catalog-addons__item-wrapper">
+              <h3 class="catalog-addons__title">Молоко</h3>
+              <table class="catalog-addons__attributes">
+                <tr>
+                  <td class="catalog-addons__value">1 литр</td>
+                  <td class="catalog-addons__price">100 Р.</td>
+                </tr>
+              </table>
+            </div>
+            <a class="button button--catalog button--addons" href="form.html">Заказать</a>
+          </li>
+
+          <li class="catalog-addons__item">
+            <div class="catalog-addons__item-wrapper">
+              <h3 class="catalog-addons__title">Витамины</h3>
+              <table class="catalog-addons__attributes">
+                <tr>
+                  <td class="catalog-addons__value">1 упаковка (30 г)</td>
+                  <td class="catalog-addons__price">300 Р.</td>
+                </tr>
+              </table>
+            </div>
+            <a class="button button--catalog button--addons" href="form.html">Заказать</a>
+          </li>
+        </ul>
+
+        <div class="gift layout-positioner">
+          <p class="gift__content">Закажите все<br>и получите чехол для кота в подарок!</p>
+        </div>
+      </div>
     </main>
 
     <footer class="page-footer">
+      <div class="page-footer__map-wraper">
+        <section class="page-footer__contacts">
+          <h2 class="visually-hidden">Контакты:</h2>
+          <div class="page-footer__contacts-wrapper page-footer__contacts-wrapper--index layout-positioner">
+            <p class="page-footer__contacts-title">Приглашаем к&nbsp;сотрудничеству дилеров!</p>
+            <p class="page-footer__contacts-address">ул. Большая Конюшенная, д. 19/8 <span class="page-footer__contacts-city">Санкт-Петербург</span></p>
+          </div>
+        </section>
+
+        <iframe class="page-footer__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.593530267094!2d30.320837316108992!3d59.938886669040656!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTnCsDU2JzIwLjAiTiAzMMKwMTknMjIuOSJF!5e0!3m2!1sru!2sru!4v1558330710990!5m2!1sru!2sru" width="320" height="360" allowfullscreen></iframe>
+      </div>
+
       <div class="page-footer__wraper layout-positioner">
         <a class="page-footer__logo" href="index.html">
           <img src="img/logo-footer.svg" width="128" height="24" alt="Cat energy">

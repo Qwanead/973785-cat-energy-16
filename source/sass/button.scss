@@ -1,18 +1,21 @@
 .button {
   display: inline-block;
+
   width: 100%;
   padding: 10px;
 
+  text-align: center;
+  vertical-align: middle;
+  text-transform: uppercase;
+
   color: $contrast-color;
+  border: none;
+  background-color: $btn-color;
+
   font-family: "Oswald", "Arial MT", sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 18px;
-  text-transform: uppercase;
-  vertical-align: middle;
-  text-align: center;
-
-  background-color: $btn-color;
 
 
   &:hover,
@@ -25,7 +28,8 @@
     background-color: $btn-act-color;
   }
 
-  &--catalog {
+  &--catalog,
+  &--form {
     font-size: 16px;
     line-height: 20px;
   }
@@ -57,8 +61,32 @@
     &--catalog {
       width: 100%;
       padding: 10px;
+
       font-size: 16px;
       line-height: 20px;
     }
+
+    &--form {
+      width: 283px;
+      height: 52px;
+    }
+
+    &--addons {
+      margin-top: 13px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .button--form {
+    width: 568px;
+    height: 52px;
+  }
+
+  .button--addons {
+    flex-shrink: 0;
+
+    width: 245px;
+    margin: 0;
   }
 }

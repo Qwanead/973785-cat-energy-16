@@ -1,7 +1,9 @@
 @font-face {
   font-family: "Oswald";
-  font-style: normal;
   font-weight: 400;
+  font-style: normal;
+
+  font-display: swap;
   src:
     local("Oswald Regular"),
     local("Oswald-Regular"),
@@ -11,8 +13,10 @@
 
 @font-face {
   font-family: "Oswald";
-  font-style: normal;
   font-weight: 500;
+  font-style: normal;
+
+  font-display: swap;
   src:
     local("Oswald Medium"),
     local("Oswald-Medium"),

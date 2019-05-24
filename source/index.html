@@ -5,6 +5,8 @@
     <title>HTML Academy: Кэт энерджи</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="format-detection" content="telephone=no">
+    <link rel="preload" href="/fonts/oswaldregular.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="/fonts/oswaldmedium.woff2" as="font" crossorigin="anonymous">
     <link href="css/style.min.css" rel="stylesheet">
     <script>
       // Picture element HTML5 shiv
@@ -25,10 +27,12 @@
             <img class="page-header__logo-image" src="./img/logo-mobile.svg" width="190" height="38" alt="Логотип Кэт энерджи">
           </picture>
         </a>
-        <button class="page-header__toggle" type="button">Открыть меню</button>
+        <!-- page-header__toggle классы модификаторы для JS: --no-js --open --close -->
+        <button class="page-header__toggle page-header__toggle--no-js" type="button">Открыть меню</button>
       </div>
 
       <nav class="main-nav">
+        <!-- main-nav__list класс модификатор для JS: --close -->
         <ul class="main-nav__list">
           <li><a class="main-nav__item main-nav__item--index">Главная</a></li>
           <li><a class="main-nav__item main-nav__item--index" href="catalog.html">Каталог продукции</a></li>
@@ -41,17 +45,22 @@
       <h1 class="visually-hidden">Кэт энерджи - магазин функционального питания для котов</h1>
 
       <section class="slogan">
-        <h2 class="slogan__header">Функциональное питание для котов</h2>
-        <p class="slogan__content">Занялся собой? Займись котом!</p>
-        <picture>
-          <source type="image/webp" media="(min-width: 1300px)" srcset="img/index-can-desktop@1x.webp 1x, img/index-can-desktop@2x.webp 2x">
-          <source type="image/webp" media="(min-width: 768px)" srcset="img/index-can-tablet@1x.webp 1x, img/index-can-tablet@2x.webp 2x">
-          <source type="image/webp" srcset="img/index-can-mobile@1x.webp 1x, img/index-can-mobile@2x.webp 2x">
-          <source media="(min-width: 1300px)" srcset="img/index-can-desktop@1x.png 1x, img/index-can-desktop@2x.png 2x">
-          <source media="(min-width: 768px)" srcset="img/index-can-tablet@1x.jpg 1x, img/index-can-tablet@2x.jpg 2x">
-          <img class="slogan__image" src="img/index-can-mobile@1x.png" srcset="img/index-can-mobile@2x.png 2x" width="280" height="270" alt="Притание для котов">
-        </picture>
-        <a class="button" href="form.html">Подобрать программу</a>
+        <div class="background-cat">
+          <div class="background-cat__image"></div>
+        </div>
+        <div class="slogan-wrapper">
+          <h2 class="slogan__header">Функциональное питание для котов</h2>
+          <p class="slogan__content">Занялся собой? Займись котом!</p>
+          <picture>
+            <source type="image/webp" media="(min-width: 1300px)" srcset="img/index-can-desktop@1x.webp 1x, img/index-can-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/index-can-tablet@1x.webp 1x, img/index-can-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/index-can-mobile@1x.webp 1x, img/index-can-mobile@2x.webp 2x">
+            <source media="(min-width: 1300px)" srcset="img/index-can-desktop@1x.png 1x, img/index-can-desktop@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="img/index-can-tablet@1x.jpg 1x, img/index-can-tablet@2x.jpg 2x">
+            <img class="slogan__image" src="img/index-can-mobile@1x.png" srcset="img/index-can-mobile@2x.png 2x" width="280" height="270" alt="Притание для котов">
+          </picture>
+          <a class="button" href="form.html">Подобрать программу</a>
+        </div>
       </section>
 
       <div class="layout-positioner">
@@ -72,7 +81,7 @@
         </section>
 
         <section class="advantages">
-          <h2 class="adbvantages__header">Как это работает</h2>
+          <h2 class="advantages__header">Как это работает</h2>
           <ul class="advantages__list">
             <li class="advantages__item advantages__item--part">
               Функциональное питание содержит только полезные питательные вещества.
@@ -89,9 +98,65 @@
           </ul>
         </section>
       </div>
+
+      <section class="example">
+        <div class="example__wrapper">
+          <div class="example__header-wrapper layout-positioner">
+            <h2 class="example__header">Живой пример</h2>
+
+            <div class="example__content-wrapper">
+              <p class="example__content">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день. </p>
+
+              <div class="example__stats">
+                <div class="example__stats-wrapper">
+                  <p class="example__stats-block example__stats-block--weight">5 кг</p>
+                  <p class="example__stats-block example__stats-block--time">60 дней</p>
+                </div>
+
+                <p class="example__stats-cost">
+                  Затраты на питание: <span class="example__stat-price">15 000 руб.</span>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="example__beforeafter-wrapper">
+            <div class="example__beforeafter">
+              <picture>
+                <source type="image/webp" media="(min-width: 1300px)" srcset="img/before-desktop@1x.webp 1x, img/before-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/before-tablet@1x.webp 1x, img/before-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/before-mobile@1x.webp 1x, img/before-mobile@2x.webp 2x">
+                <source media="(min-width: 1300px)" srcset="img/before-desktop@1x.png 1x, img/before-desktop@2x.png 2x">
+                <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png 1x, img/before-tablet@2x.png 2x">
+                <img class="example__image" src="img/before-mobile@1x.png" srcset="img/before-mobile@2x.png 2x" width="311" height="232" alt="Было/Стало">
+              </picture>
+
+              <div class="example__toggle-wrapper">
+                <p class="example__toggle-legend">Было</p>
+                <div class="example__toggle-scale">
+                  <div class="example__toggle-control"></div>
+                </div>
+                <p class="example__toggle-legend">Стало</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
     <footer class="page-footer">
+      <div class="page-footer__map-wraper">
+        <section class="page-footer__contacts page-footer__contacts--index">
+          <h2 class="visually-hidden">Контакты:</h2>
+          <div class="page-footer__contacts-wrapper page-footer__contacts-wrapper--index layout-positioner">
+            <p class="page-footer__contacts-title">Приглашаем к&nbsp;сотрудничеству дилеров!</p>
+            <p class="page-footer__contacts-address">ул. Большая Конюшенная, д. 19/8 <span class="page-footer__contacts-city">Санкт-Петербург</span></p>
+          </div>
+        </section>
+
+        <iframe class="page-footer__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.593530267094!2d30.320837316108992!3d59.938886669040656!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTnCsDU2JzIwLjAiTiAzMMKwMTknMjIuOSJF!5e0!3m2!1sru!2sru!4v1558330710990!5m2!1sru!2sru" width="320" height="360" allowfullscreen></iframe>
+      </div>
+
       <div class="page-footer__wraper layout-positioner">
         <a class="page-footer__logo" href="index.html">
           <img src="img/logo-footer.svg" width="128" height="24" alt="Cat energy">
