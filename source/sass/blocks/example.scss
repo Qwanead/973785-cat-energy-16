@@ -4,6 +4,13 @@
   background-color: $background-block-color;
 }
 
+.example__header-wrapper {
+  width: 320px;
+  margin: 0 auto;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
 .example__header {
   margin: 0;
   margin-top: 17px;
@@ -174,6 +181,13 @@
 
     border-top: 1px solid $line-catalor-color;
     background-color: $contrast-color;
+  }
+
+  .example__header-wrapper {
+    width: $tablet-width;
+    margin: 0 auto;
+    padding-right: 30px;
+    padding-left: 30px;
   }
 
   .example__header {
@@ -377,7 +391,7 @@
 
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
+    justify-content: space-between;
 
     width: $desktop-width;
     margin-top: 0;
@@ -385,10 +399,12 @@
     margin-left: auto;
 
     border: none;
+    background-color: $background-block-color;
   }
 
   .example__header-wrapper {
-    width: 100%;
+    width: auto;
+    margin: 0;
     padding: 0;
 
     background-color: $background-block-color;
@@ -403,8 +419,8 @@
   }
 
   .example__content-wrapper {
+    width: 490px;
     padding-top: 65px;
-    padding-right: 100px;
     padding-left: 40px;
   }
 
@@ -439,16 +455,26 @@
   }
 
   .example__beforeafter-wrapper {
-    flex: 0 0 710px;
+    flex: 0 0 677px;
 
-    width: 710px;
     margin-top: 0;
     padding-top: 329px;
   }
 
+  .example__beforeafter {
+    width: auto;
+  }
+
   .example__image {
     bottom: 61px;
-    left: 20px;
+    left: -11px;
+
+    width: 677px;
+    height: 519px;
+  }
+
+  .example__toggle-wrapper {
+    margin-left: 66px;
   }
 
   .example__toggle-scale {
