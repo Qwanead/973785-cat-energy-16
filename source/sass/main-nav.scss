@@ -1,11 +1,16 @@
 .main-nav__list {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
 
   margin: 0;
   padding: 0;
 
   list-style: none;
+
+  &--close {
+    display: none;
+  }
 }
 
 .main-nav__item {
@@ -36,6 +41,7 @@
 
 @media (min-width: $tablet-width) {
   .main-nav__list {
+    display: flex;
     flex-direction: row;
     justify-content: space-between;
 
@@ -69,6 +75,7 @@
 @media (min-width: $desktop-width) {
   .main-nav__list {
     min-width: 480px;
+    max-width: 600px;
   }
 
   .main-nav__item {

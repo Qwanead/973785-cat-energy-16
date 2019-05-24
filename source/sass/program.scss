@@ -99,7 +99,15 @@
   line-height: 16px;
 
   &:active {
-    color: $program-link-act-color;
+    opacity: 0.3;
+
+    &::after {
+      right: -45px;
+
+      width: 69px;
+
+      background-image: url("../img/icon-right-arrow-verylong.svg");
+    }
   }
 
   &::after {

@@ -70,11 +70,17 @@
     margin-top: -20px;
 
     svg {
+      position: relative;
+      top: -2px;
+
       width: 30px;
       height: 16px;
     }
 
     &--facebook {
+      position: relative;
+      top: -3px;
+
       margin-top: -30px;
 
       svg {
@@ -84,6 +90,10 @@
     }
 
     &--instagram {
+      position: relative;
+      top: -5px;
+      left: 3px;
+
       margin-right: 25px;
       margin-left: 25px;
 

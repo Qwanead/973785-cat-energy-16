@@ -44,6 +44,12 @@
 
     color: $label-color;
   }
+
+  &--error {
+    > svg {
+      color: $input-border-error-color;
+    }
+  }
 }
 
 .form__textarea-wraper {

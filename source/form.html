@@ -44,10 +44,12 @@
           <ul class="input__list form__cat layout-positioner">
             <li class="input__list-item">
               <label class="input__label" for="name-id">Имя:*</label>
+              <!-- при ошибке ввода добавляется класс модификатор input__text--error -->
               <input class="input__text" type="text" name="name" id="name-id" placeholder="Барсик" required>
             </li>
             <li class="input__list-item">
               <label class="input__label" for="weight-id">Вес (кг):*</label>
+              <!-- при ошибке ввода добавляется класс модификатор input__text--error -->
               <input class="input__text" type="text" name="weight" id="weight-id" placeholder="7" required>
             </li>
             <li class="input__list-item">
@@ -75,15 +77,19 @@
 
         <h2 class="page-main__subtitle page-main__subtitle--2rows layout-positioner">Контактные данные (владельца кота)</h2>
         <ul class="input__list form__contacts layout-positioner">
+          <!-- при ошибке ввода добавляется класс модификатор form__contats-item--error -->
           <li class="input__list-item form__contats-item">
             <label class="input__label" for="mail-id">E-mail:*</label>
+            <!-- при ошибке ввода добавляется класс модификатор input__text--error -->
             <input class="input__text form__contats-input" type="email" name="mail" id="mail-id" placeholder="kuklachev@gmail.com" required>
             <svg width="17px" height="13px">
               <use xlink:href="img/sprite-icons.svg#icon-mail"></use>
             </svg>
           </li>
+          <!-- при ошибке ввода добавляется класс модификатор form__contats-item--error -->
           <li class="input__list-item form__contats-item">
             <label class="input__label" for="tel-id">Телефон:*</label>
+            <!-- при ошибке ввода добавляется класс модификатор input__text--error -->
             <input class="input__text form__contats-input" type="tel" name="tel" id="tel-id" placeholder="8 (960) 900-60-90" required>
             <svg width="20px" height="20px">
               <use xlink:href="img/sprite-icons.svg#icon-phone"></use>

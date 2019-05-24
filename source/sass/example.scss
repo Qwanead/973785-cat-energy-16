@@ -281,6 +281,8 @@
   .example__toggle-legend {
     position: relative;
 
+    cursor: pointer;
+
     font-size: 20px;
     line-height: 20px;
 
@@ -294,6 +296,18 @@
       content: "";
 
       border-bottom: 1px dotted $toggle-scale-box-shadow-act;
+    }
+
+    &:hover {
+      &::before {
+        border-bottom-style: solid;
+      }
+    }
+
+    &:active {
+      &::before {
+        border-bottom: none;
+      }
     }
   }
 
@@ -331,6 +345,11 @@
 
       border-radius: 50%;
       background-color: $btn-color;
+    }
+
+    &:hover,
+    &:focus {
+      box-shadow: 0 3px 5px $toggle-scale-box-shadow-hvr;
     }
 
     &:active {
@@ -421,6 +440,7 @@
 
   .example__beforeafter-wrapper {
     flex: 0 0 710px;
+
     width: 710px;
     margin-top: 0;
     padding-top: 329px;

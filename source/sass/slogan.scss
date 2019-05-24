@@ -1,4 +1,8 @@
 .slogan {
+  display: flex;
+}
+
+.slogan-wrapper {
   width: 320px;
   margin: 0 auto;
   margin-bottom: 23px;
@@ -43,7 +47,7 @@
 }
 
 @media (min-width: $tablet-width) {
-  .slogan {
+  .slogan-wrapper {
     position: relative;
 
     width: 530px;
@@ -94,30 +98,13 @@
 @media (min-width: $desktop-width) {
   .slogan {
     position: relative;
+  }
+
+  .slogan-wrapper {
     left: -265px;
 
     min-height: 635px;
     margin-bottom: 5px;
-
-    &::before {
-      position: absolute;
-      z-index: -2;
-      top: -135px;
-      left: 530px;
-
-      width: 720px;
-      height: 696px;
-
-      content: "";
-
-      background-color: $background-slogan;
-      background-image: url("../img/index-background-desktop@1x.jpg");
-
-      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-        background-image: url("../img/index-background-desktop@2x.jpg");
-        background-size: cover;
-      }
-    }
   }
 
   .slogan__header {

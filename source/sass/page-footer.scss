@@ -192,8 +192,8 @@
 
   .page-footer__contacts-wrapper {
     position: absolute;
-    top: 92px;
-    left: 110px;
+    top: 95px;
+    left: 106px;
 
     width: 570px;
     height: 201px;
@@ -205,5 +205,9 @@
 
   .page-footer__contacts-address {
     text-align: left;
+  }
+
+  .page-footer__contacts-city {
+    padding-top: 20px;
   }
 }
