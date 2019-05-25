@@ -50,6 +50,7 @@
   &:focus,
   &:active {
     border: 2px solid $placeholder-color;
+    outline: none;
   }
 
   &::placeholder {
