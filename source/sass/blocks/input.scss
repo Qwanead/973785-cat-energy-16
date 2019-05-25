@@ -12,9 +12,11 @@
 .input__label {
   flex-shrink: 0;
 
+  max-width: 310px;
   padding-right: 15px;
 
   text-transform: uppercase;
+  word-break: break-all;
 
   color: $label-color;
 
@@ -120,6 +122,11 @@
 
   border-radius: 50%;
   background-color: $btn-color;
+}
+
+.input__radio:focus + label,
+.input__checkbox:focus + label {
+  opacity: 0.3;
 }
 
 .input__list-item--checkbox {
